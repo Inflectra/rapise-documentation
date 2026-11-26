@@ -39,3 +39,5 @@ The file holds every page cut at its headings, in navigation order. Each section
 | `text` | Markdown of the section without its heading. Images become `(image: <alt text>)` (alt texts that are file names are dropped), admonitions and content tabs become plain paragraphs (a `Screenshot`/`Transcript` tab pair becomes the image and `Screenshot description:`), links to other pages point to their `location` |
 
 The build log says how many sections were written and how many links point to a missing page or anchor; `mkdocs build -v` lists those links.
+
+`docs/llms-ui.txt` is a guide to the Rapise UI and workflows written for the help chat. Its links are section locations (`[Object Tree](Guide/object_tree#filtering)`); the hook checks them on every build and logs a warning for each link that is not a section. When a heading in a linked section changes, update the guide.
