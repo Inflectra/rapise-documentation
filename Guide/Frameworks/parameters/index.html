@@ -12051,10 +12051,10 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>The purpose of multiselect parameters is to run test cases included in a test set with all possible parameter value combinations. For example, if you have just one multiselect parameter <code>MP1</code> with selected options <code>MP1O1</code> and <code>MP1O2</code>, RapiseLauncher will then run a test set twice: the first time with <code>MP1=MP1O1</code> and the second time with <code>MP1=MP1O2</code>. Another example: If you have <code>MP1</code> with selected values <code>[MP1O1, MP1O2]</code> and <code>MP2</code> with selected values <code>[MP2O1, MP2O2]</code>, RapiseLauncher will then run a test set 4 times with the following combinations:
-<div class="highlight"><pre><span></span><code>MP1=MP1O1, MP2=MP1O1
-MP1=MP1O1, MP2=MP1O2
-MP1=MP1O2, MP2=MP1O1
-MP1=MP1O2, MP2=MP1O2
+<div class="highlight"><pre><span></span><code>MP1=MP1O1, MP2=MP2O1
+MP1=MP1O1, MP2=MP2O2
+MP1=MP1O2, MP2=MP2O1
+MP1=MP1O2, MP2=MP2O2
 </code></pre></div></p>
 </div>
 <h4 id="browser-parameter">Browser Parameter<a class="headerlink" href="#browser-parameter" title="Permanent link">&para;</a></h4>
@@ -12068,7 +12068,7 @@ MP1=MP1O2, MP2=MP1O2
 <h4 id="datacolumn-parameter">Datacolumn Parameter<a class="headerlink" href="#datacolumn-parameter" title="Permanent link">&para;</a></h4>
 <p>To define a datacolumn parameter, you need to have a <a href="#data-file-parameter">data file</a>. To add one, click the <code>Add Input Data File</code> button under the <code>Parameters</code> table.</p>
 <p><img alt="Add Input Data File" src="../img/parameters_add_input_data_file.png" width="474px" /></p>
-<p>A <code>Data.csv</code> file will be added to the <code>Lib\LibFramework</code> folder of your framework. You can right-click it to edit.</p>
+<p>A <code>Data.csv</code> file will be added to the <code>Shared</code> folder of your framework. You can right-click it to edit.</p>
 <p><img alt="Edit Data File" src="../img/parameters_edit_data_file.png" width="535px" /></p>
 <p>In the CSV editor, you can add and remove columns, as well as data rows.</p>
 <p><img alt="CSV Editor" src="../img/parameters_csv_file_editor.png" width="670px" /></p>
@@ -12099,14 +12099,14 @@ v21     v22
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O1
-DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP1O2
-DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O1
-DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP1O2
-<span class="hll">DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP1O1
-</span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP1O2
-</span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP1O1
-</span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP1O2
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP2O1
+DC1=v11, DC2=v12, MP1=MP1O1, MP2=MP2O2
+DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP2O1
+DC1=v11, DC2=v12, MP1=MP1O2, MP2=MP2O2
+<span class="hll">DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP2O1
+</span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O1, MP2=MP2O2
+</span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP2O1
+</span><span class="hll">DC1=v21, DC2=v22, MP1=MP1O2, MP2=MP2O2
 </span></code></pre></div></td></tr></table></div>
 <p>To explore a practical application of multiselect and datacolumn parameters, please refer to <a href="https://www.inflectra.com/Support/KnowledgeBase/KB760.aspx">this knowledge base article</a> for a real-life example.</p>
 </div>

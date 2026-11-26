@@ -12,6 +12,8 @@ Rapise documentation is organized into sections for different aspects of the too
 - [llms-rvl.txt](llms-rvl.txt): RVL (Rapise Visual Language) syntax and concepts
 - [llms-framework.txt](llms-framework.txt): Test framework structure and files
 - [llms-extending.txt](llms-extending.txt): Creating page objects and extension libraries
+- [llms-ui.txt](llms-ui.txt): Rapise IDE windows, menus, dialogs and common workflows, with links to documentation sections
+- [llms-sections.json](llms-sections.json): All documentation split into sections (location, url, path, title, Markdown text) for search
 
 ## Full Documentation
 

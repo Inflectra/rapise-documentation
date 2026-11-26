@@ -12208,12 +12208,12 @@ popd
 <p>With Rapise 8.0+, you can set Git properties for any test set without creating custom properties. This can be done in <a href="../spira_dashboard_2/">Spira Dashboard</a> in the Test Sets view:</p>
 <p><img alt="" src="../img/git_integration_git_custom_properties.png" width="832px" /></p>
 </div>
-<p>In this case, you need to add custom fields to the Test Set definition in <strong>Spira</strong>:</p>
+<p>With earlier versions of Rapise, or to keep the properties in <strong>Spira</strong> itself, add custom fields to the Test Set definition in <strong>Spira</strong>:</p>
 <p><img alt="Spira TS Fields" src="../img/git_integration_git_tsprops.png" /></p>
 <ul>
 <li><strong>GitUrl</strong> - Git remote repository URL. E.g., <code>https://github.com/Inflectra/rapise-samples</code>.</li>
 <li><strong>GitUser</strong> - optional. Needed when the repository is protected and requires an authentication.</li>
-<li><strong>GitPassword</strong> - optional. Username for authentication.</li>
+<li><strong>GitPassword</strong> - optional. Password for authentication.</li>
 <li><strong>GitBranch</strong> - optional. Links the test case to a specific branch instead of the default <code>master</code> branch.</li>
 <li><strong>GitRoot</strong> - optional. Target folder for checkout. If empty or not specified, the default Rapise Launcher temp folder is used.</li>
 </ul>

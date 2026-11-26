@@ -11868,13 +11868,13 @@
 <h2 id="recording-a-salesforcecom-test">Recording a Salesforce.com Test<a class="headerlink" href="#recording-a-salesforcecom-test" title="Permanent link">&para;</a></h2>
 <p><strong>Salesforce.com</strong> is completely web-based, and you use a web browser to access its user interface. Therefore, when recording a test using Rapise, you use the same web browser libraries that are used for other web tests:</p>
 <ul>
-<li>Most of the Salesforce.com user interface will be tested using the <strong>standard browser library</strong> for your web browser of choice (e.g., Internet Explorer HTML, Firefox HTML, and Chrome HTML).</li>
+<li>Most of the Salesforce.com user interface will be tested using the <strong>standard browser library</strong> for your web browser of choice (the <strong>Web</strong> library used with your Selenium browser profile).</li>
 <li>In addition, there are special controls inside Salesforce.com that Rapise has specialized support for. For that reason, you'll also see the DomSalesforce library added to your test alongside the browser library. This <strong>DomSalesforce</strong> library adds additional rules that identify certain Salesforce.com objects (e.g., the main Grid) to make testing easier.</li>
 </ul>
 <p>When you record your first test, you'll see the following library selection code generated automatically by Rapise:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">g_load_libraries</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Web&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;DomSalesforce&quot;</span><span class="p">];</span>
 </code></pre></div>
-<p>If the <strong>DomSalesforce</strong> library is not listed in your test, you will need to <a href="../change_the_libraries_being_use/">manually add it</a> using the <code>[ ] Libraries</code> button on the tool menu.</p>
+<p>If the <strong>DomSalesforce</strong> library is not listed in your test, you will need to <a href="../change_the_libraries_being_use/">manually add it</a> using the <code>Tools &gt; Libraries</code> menu item.</p>
 <h2 id="tips-for-interacting-with-objects">Tips for Interacting with Objects<a class="headerlink" href="#tips-for-interacting-with-objects" title="Permanent link">&para;</a></h2>
 <p>Many of the screens in Salesforce.com use simple HTML form fields such as text boxes, drop-down lists, etc.:</p>
 <p><img alt="salesforce_fields" src="../img/salesforce_com2.png" /></p>

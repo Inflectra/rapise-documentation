@@ -12852,7 +12852,7 @@
 <p><a href="https://www.inflectra.com/SpiraTeam/">SpiraTeam</a> and <a href="https://www.inflectra.com/SpiraPlan/">SpiraPlan</a> include <strong>SpiraTest</strong> as part of their functionality. Therefore, wherever <strong>SpiraTest</strong> is referenced in this section, it applies equally to <strong>SpiraTeam</strong> and <strong>SpiraPlan</strong>.</p>
 </div>
 <h2 id="configuring-spiratest">Configuring SpiraTest<a class="headerlink" href="#configuring-spiratest" title="Permanent link">&para;</a></h2>
-<p>Before you can use SpiraTest to manage your Rapise automated tests, you must perform some initial configuration. This section assumes that you already have a working installation of SpiraTest or SpiraTeam v4.2 or later. If not, please refer to the <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/Installing-SpiraPlan/">SpiraTest Installation and Administration Guide</a> for details about installing SpiraTest.</p>
+<p>Before you can use SpiraTest to manage your Rapise automated tests, you must perform some initial configuration. This section assumes that you already have a working installation of SpiraTest, SpiraTeam or SpiraPlan, version 6.15.1.0 or later. If not, please refer to the <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/Installing-SpiraPlan/">SpiraTest Installation and Administration Guide</a> for details about installing SpiraTest.</p>
 <h2 id="configuring-the-rapise-automation-engine">Configuring the Rapise Automation Engine<a class="headerlink" href="#configuring-the-rapise-automation-engine" title="Permanent link">&para;</a></h2>
 <p>Log in to SpiraTest as a system administrator, navigate to the SpiraTest main Administration page</p>
 <p><img alt="Admin Page Gear" src="../img/spiratest_integration_admin_page_gear.png" /></p>
@@ -12910,10 +12910,6 @@
 <p><strong>Token</strong>, the identifier of the current machine on which Rapise is installed. It must match the <code>Token</code> name of the corresponding <a href="https://spiradoc.inflectra.com/Spira-User-Manual/Automation-Host-Management/">Automation Host</a> in SpiraTest.</p>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must be running SpiraTest / SpiraTeam v4.0 or later to use the integration with Rapise.</p>
-</div>
 <h3 id="artifact-permissions">Artifact Permissions<a class="headerlink" href="#artifact-permissions" title="Permanent link">&para;</a></h3>
 <p>To fully leverage Rapise &amp; Spira integration, the user account requires the following <a href="https://spiradoc.inflectra.com/Spira-Administration-Guide/System-Users/#artifact-specific-permissions">artifact permissions</a> in Spira:</p>
 <p><img alt="Artifact Permissions" src="../img/spira_artifact_permissions.png" /></p>
@@ -13234,7 +13230,7 @@
 <p><strong>Polling Frequency</strong> - The frequency in minutes at which the application will poll the SpiraTest server for updates to the automation host's schedule. The default is 5 minutes and should be sufficient for most installations. Note that tests will still be executed at their scheduled time; this simply determines how often the program communicates with the SpiraTest server to detect schedule changes. Updating the polling frequency will reset the currently running timers.</p>
 </li>
 <li><strong>Read Ahead</strong> - How far in advance (in minutes) the program should read the schedule for the Automation host. Tests that are scheduled further in advance will not appear as a pending test on the status screen.</li>
-<li><strong>Connection Timeout</strong> - A request to Spira is considered failed after the specified time. Requires Rapise 8.1+. <a class="headerlink" href="#connection-timeout" title="Permanent link">¶</a></li>
+<li><strong>Connection Timeout</strong> - A request to Spira is considered failed after the specified time. Requires Rapise 8.1+.</li>
 <li><strong>Automatically run tests that are overdue</strong> - When this is checked, any tests pulled from the SpiraTest server that have a scheduled date in the past will be marked as Overdue. Normally, overdue tests will not be executed. With this option enabled, they will be executed as soon as the poll is complete.</li>
 <li><strong>Run in load-balancing mode (adv. users)</strong> - When this is checked, test sets are executed in <a href="#load-balancing-mode">load balancing mode</a>.</li>
 </ul>

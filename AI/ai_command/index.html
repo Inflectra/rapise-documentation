@@ -12156,7 +12156,7 @@
     </tr>
 </table>
 
-<p>For example, if you want to pass a parameter, you must mention it in the <code>AI</code> command text in curly braces (e.g., <strong>{param1}</strong>) and then define a parameter with the same name but without curly braces (<strong>param1</strong>).</p>
+<p>Since Rapise 9.0, parameters can be passed to an <code>AI</code> command: mention the parameter in the <code>AI</code> command text in curly braces (e.g., <strong>{param1}</strong>) and then define a parameter with the same name but without curly braces (<strong>param1</strong>).</p>
 <p><code>AI</code> command parameters represent dynamic values that may vary during execution. This allows the generated code to remain intact while the values may be different.</p>
 <p>Example:</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
@@ -12287,7 +12287,7 @@
 </div>
 <h3 id="ai-prompt-comments">AI Prompt Comments<a class="headerlink" href="#ai-prompt-comments" title="Permanent link">&para;</a></h3>
 <p>AI prompt comments start with <code>##</code> and are passed directly to the <code>AI</code> command prompt. Such comments help clarify details that may assist the AI in interpreting commands.</p>
-<p>For example, this testing framework has page objects <code>POAPI</code> and <code>POCommon</code>. Each has a <code>DoLogin</code> command: <code>POPAPI.DoLogin</code> and <code>POCommon.DoLogin</code>. It is up to the AI to choose which one to use when generating code. In this example, it preferred to use the API:</p>
+<p>For example, this testing framework has page objects <code>POAPI</code> and <code>POCommon</code>. Each has a <code>DoLogin</code> command: <code>POAPI.DoLogin</code> and <code>POCommon.DoLogin</code>. It is up to the AI to choose which one to use when generating code. In this example, it preferred to use the API:</p>
 <p><img alt="Login with POAPI" src="../img/AI_login_poapi.png" /></p>
 <p>If we want the test case to use the UI instead, we can add an instruction for the AI. This instruction must start with <code>##</code> to let Rapise know that it is for the <code>AI</code>. We want to specify that all actions in this RVL should be done using the UI, not the API. Here is the result:</p>
 <p><img alt="Login with POCommon" src="../img/AI_login_pocommon.png" /></p>

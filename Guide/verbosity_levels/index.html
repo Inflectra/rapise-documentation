@@ -11854,6 +11854,37 @@
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>The <strong>Verbose Level</strong> is set via the menu <code>Tools &gt; Verbose Level &gt; ...</code>:</p>
 <p><img alt="verbosity level" src="../img/verbosity_levels1.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Menu item</th>
+<th><code>g_verboseLevel</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Verbose</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Level 1 (Minimal)</td>
+<td>1 (default)</td>
+</tr>
+<tr>
+<td>Level 2 (Normal)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Level 3 (Flood)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Level 4 (Overflood)</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>The level is kept in the global variable <code>g_verboseLevel</code>. It can also be set on the command line, for example <code>-eval:g_verboseLevel=3</code>.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../internal_debugger/">Internal Debugger</a></li>

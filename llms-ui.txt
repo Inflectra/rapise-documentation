@@ -1,0 +1,356 @@
+# Rapise UI and Workflows
+
+> A map of the Rapise desktop IDE and of the tasks people do in it, for an AI assistant that answers questions about Rapise. It names the windows, menus, dialogs and buttons as Rapise shows them, says which feature solves which problem, and points to the documentation section with the details. It describes Rapise 9.1; "(9.1+)" marks features that older versions lack.
+
+How to read the links: every link target is a documentation location, a page path with an optional `#section`, for example `Guide/object_tree#filtering`. The same section is on the web at https://rapisedoc.inflectra.com/Guide/object_tree/#filtering. This guide only says where things are and when to use them; read the linked section before giving step-by-step instructions, and quote labels exactly as written there.
+
+Menu paths are written `Menu > Item`. Button and field names are in backticks.
+
+---
+
+## 1. Rapise in Short
+
+- Rapise records and plays back UI tests for web (Selenium WebDriver), desktop Windows applications, mobile (Appium), and also tests web services (REST/SOAP) and manual tests. [Overview](Guide/overview) · [Technologies](Guide/technologies)
+- A test is a folder with a `.sstest` file. Its steps are written either in RVL (Rapise Visual Language, a spreadsheet `Main.rvl.xlsx`) or in JavaScript (`Main.js`). Learned UI objects live in `Objects.js` (the object repository). [Understanding the Script](Guide/understanding_the_script) · [RVL](Guide/visual_language)
+- Since Rapise 8 the normal way to work is a Testing Framework: one root test that holds many test cases, Page Objects / Modules, shared files, parameters and configurations. Older sub-tests are deprecated. [Frameworks](Guide/Frameworks/frameworks) · [Framework intro](Intro/framework) · [Tests and Sub-Tests](Guide/tests_and_sub_tests)
+- Rapise works with Spira (SpiraTest/SpiraTeam/SpiraPlan): tests are stored and versioned there, test sets are scheduled there, and RapiseLauncher runs them on automation hosts. [SpiraTest Integration](Guide/spiratest_integration) · [Spira Dashboard](Guide/spira_dashboard_2)
+- AI features: AI Commands in RVL, AiTranslator, self-healing with SmartAction, AiRobot, AiTester, chats in the AI Dashboard, agentic chat with MCP tools. [AI Overview](AI/overview)
+- A first tour of the window: [Know Your Way Around](Intro/orientation). Shortcuts and common actions on one page: [Cheat Sheet](Guide/cheatsheet).
+
+---
+
+## 2. The Main Window
+
+[Know Your Way Around](Intro/orientation#basic-navigation) shows the parts with numbers.
+
+| Part | What it is | Where |
+|---|---|---|
+| Main menu | File, Edit, View, Test, Tools, Settings, Help; Report and Debugger menus appear when a report is shown or while debugging. Items change with the active editor | [Main Menu and Toolbars](Guide/menu_and_toolbars) |
+| Main toolbar | Record, Play, and the buttons `Main` (opens `Main.rvl.xlsx`/`Main.js`), `User` (`User.js`), `RVL`. The `AI` button opens the AI Panel | [Main Toolbar](Guide/menu_and_toolbars#main-toolbar) |
+| Profile dropdown | Top right. Chooses the browser (Selenium), mobile or browser profile used for playback and recording | [Selecting a Playback Browser](Guide/cross_browser_testing#selecting-a-new-playback-browser) |
+| Object Tree | Left. The test's objects, and in a framework the test cases, Modules/Pages and shared files. Has a `Filter` box | [Object Tree](Guide/object_tree) |
+| Test Files view | Left, a tab beside the Object Tree. The files of the test; create, add, remove files | [Test Files View](Guide/test_files_dialog) |
+| Properties | Properties of the selected object or file; `...` opens a value editor | [Properties](Guide/properties) |
+| Content view | The center. Opens each file in its editor: `.rvl.xlsx` RVL Editor, `.js` Source Editor, `.trp` Report Viewer, `.xlsx` Spreadsheet Viewer, `.rest`/`.soap` editors, `.rmt` Manual Test Editor | [Content View](Guide/content_view) |
+| Output view | Bottom. Execution log, `Log()` output, search box | [Output View](Guide/output_view) |
+| Errors / Warning / Find Results | Errors that stopped recording or playback; syntax errors while typing and invalid RVL rows; search results. Double-click a line to go to it | [Errors](Guide/errors_view) · [Warning](Guide/warning_view) · [Find Results](Guide/find_results_view) |
+| Watch, Variable/Call Stack | Open by themselves while debugging | [Watch](Guide/watch_view) · [Call Stack](Guide/variable_call_stack_view) |
+| Start Page | Tutorials, webinars, samples (`Fetch Samples`). Reopen with `View > Start Page` | [Start Page](Guide/start_page) |
+| Spira Dashboard | `View > Spira Dashboard`. Framework, parameters, Spira test cases, test sets, runs | [Spira Dashboard](Guide/spira_dashboard_2) |
+| AI Dashboard | `View > AI Dashboard`. AI settings and chats | [AI Dashboard](AI/ai_dashboard) |
+
+All dialogs and views in one list: [Dialogs, Views, and Menus](Guide/dialogs_views_menus).
+
+### Menus
+
+- `File`: `Create New > New Test | Test Automation Framework`, `Add To Framework > Test Case | Module / Page Object | Spreadsheet | Shared Script | Import External ...`, `Open`, `Open Test from Spira`, `Save to Spira`, `Recent Tests`, `Save All`, `Save As`. [File menu](Guide/menu_and_toolbars#file)
+- `Edit`: `Find in Files`, RVL row and sheet commands, `Format Document` for JavaScript, `Toggle Breakpoint`. [Edit menu](Guide/menu_and_toolbars#edit)
+- `View`: `Start Page`, `Spira Dashboard`, `AI Dashboard`, `RVL`, `Main`, `User`, `Show > Test Files | Objects | Output | Properties`, `Manual Steps`. [View menu](Guide/menu_and_toolbars#view)
+- `Test`: `Play`, `Record`, `Test Settings`, `Spira Properties`, `Playback Settings` (8.2+), `Modernize` (9.1+), `Record Manual`, `Execute Manual`. [Test menu](Guide/menu_and_toolbars#test)
+- `Tools`: `Spy`, `Debugger`, `Verbose Level`, `Libraries`, `Manual Steps`, `Object Manager`, `Npm Console`, `Web Services`, `Chrome for Testing`, `RPA Monitor`, `Rapise Launcher`, `New Incident`. [Tools menu](Guide/menu_and_toolbars#tools)
+- `Settings`: `Global` (Rapise Settings), `SpiraTest` (Spira connection), `Web Spy`, `Browser`, `Selenium`, `Mobile`, `Java`. [Settings menu](Guide/menu_and_toolbars#settings)
+- `Help`: `About` (version), `Activation`, `Help`, `Online Help`, `Remote Assistance`. [Help menu](Guide/menu_and_toolbars#help)
+- `Report` (when a report is shown): `Plain`, `Hierarchical`, `Images`, `Export to HTML | Excel | PDF | XPS`, `Choose Columns`. [Report menu](Guide/menu_and_toolbars#report)
+- `Debugger` (while debugging): `Continue` F5, `Step In` F11, `Step Over` F10, `Step Out` Shift+F11, `Stop Debugger` Shift+F5. [Debugger menu](Guide/menu_and_toolbars#debugger)
+
+### Where settings live
+
+| Setting kind | Place |
+|---|---|
+| This test only: entry point, iterations, object lookup attempts, stop on error, show report, screenshots | `Test > Test Settings` [Test Settings](Guide/settings_dialog) |
+| All tests on this machine: JavaScript engine, recorder, playback monitor, start page, default scripting language, proxy, MCP Server Port, reset layout | `Settings > Global` [Rapise Settings](Guide/options_dialog) |
+| Framework-wide values that change between runs (browser, URL, user, data file) | Spira Dashboard `Parameters` view [Parameters and Configurations](Guide/Frameworks/parameters) |
+| Values for the next local playback | `Test > Playback Settings` (8.2+) or `Parameters...` in Choose Test Case [Test Execution Parameters](Guide/test_to_play_selector#test-execution-parameters) |
+| Browser profiles (Chrome, Edge, Firefox, remote grid, BrowserStack) | `Settings > Selenium` [Selenium Settings](Guide/selenium_settings_dialog) |
+| Mobile devices and Appium | `Settings > Mobile` [Mobile Settings](Guide/mobile_settings_dialog) |
+| How Web Spy and recording build XPaths | `Settings > Web Spy` [Web Spy Settings](Guide/web_settings) |
+| Spira URL, user, API key, automation host token | `Settings > SpiraTest` [Connecting to SpiraTest](Guide/spiratest_integration#connecting-to-spiratest) |
+| AI provider, model, proxy; global or per framework | AI Dashboard `Settings` [AI Dashboard Settings](AI/ai_dashboard#settings) |
+| Libraries used for recording and playback (desktop) | `Tools > Libraries` [Change the Libraries](Guide/change_the_libraries_being_use) |
+| Library parameters (9.1+) | `Parameters...` in Choose Test Case [Library Parameters](Guide/library_parameters) |
+
+---
+
+## 3. Start Working
+
+### Create or open a test
+
+- New standalone test: `File > Create New > New Test`. The Create New Test dialog asks where to keep it (Spira or `Create Locally...`), the `Test name`, `Folder` and `Test type` (Basic, Manual, Mobile, Web); then the Choose Scripting Language dialog asks RVL or JavaScript. [Create New Test Dialog](Guide/create_new_test_dialog) · [Scripting Choice](Guide/scripting_choice_dialog) · [Create a New Test](Guide/create_a_new_test)
+- New framework: `File > Create New > Test Automation Framework`: name, folder, primary type of test. [Creating a New Testing Framework](Guide/Frameworks/frameworks#creating-a-new-testing-framework)
+- Add a test case to a framework: `File > Add To Framework > Test Case`, or `Create Test Case` on the Test Cases node of the Object Tree. [Creating a Test Case](Guide/Frameworks/frameworks#creating-a-test-case) · [Test Cases context menu](Guide/object_tree#test-cases-root-context-menu)
+- Open: `File > Open`, `File > Recent Tests`, or `File > Open Test from Spira`. [Open a Test](Guide/open_a_test)
+- Samples: Start Page, `Fetch Samples`. [Start Page](Guide/start_page#purpose) · [Samples Index](Guide/sample_tests)
+- Tutorials to follow step by step: web [RVL](Guide/tutorial_record_and_playback) / [JavaScript](Guide/tutorial_web_using_javascript), desktop [RVL](Guide/twodialogs_sample) / [JavaScript](Guide/tutorial_windows_using_javascript), mobile [Android](Guide/mobile_testing_android) / [iOS](Guide/mobile_testing_ios), web services [REST](Guide/tutorial_web_services_rest) / [SOAP](Guide/tutorial_soap_web_services), [manual](Guide/tutorial_exploratory_testing).
+
+### RVL or JavaScript
+
+- RVL is a spreadsheet of steps that needs no programming and suits most test cases; JavaScript is more flexible (loops over arrays, strings, JSON, web services). They mix: RVL calls JavaScript functions from `User.js` through the `Functions` object, and Page Objects can be either. [Choice of scripting](Guide/overview#choice-of-scripting-or-scriptless-rapise-visual-language-rvl) · [RVL vs JS for Page Objects](Guide/Frameworks/pageobjects#page-object-rvl-vs-js) · [Functions object](Guide/rvl_editor#functions-object)
+- The default language for new tests is `Default Scripting Language` in `Settings > Global`. [Rapise Settings](Guide/options_dialog#settings)
+
+---
+
+## 4. Record and Learn
+
+- `Record` (toolbar or `Test > Record`) opens the Recording Activity dialog. For web it first asks for the URL; for desktop it first shows Select an Application to Record; in a framework you first choose the test case (or Page Object) to record into. [Recording](Guide/recording) · [Recording Activity Dialog](Guide/recording_activity_dialog#how-to-open) · [Choose Test Case](Guide/test_to_play_selector#recording-and-playback)
+- Recording Activity dialog: `Verify` Ctrl+1 (checkpoint on the object under the mouse), `Learn` Ctrl+2 (add the object under the mouse without an action), `SPY` Ctrl+5 (open a spy to learn hidden or covered objects), `Pause`/`Resume`, `Finish` Ctrl+3 (writes the steps), `Cancel` (discards). `Adv.>>` adds `Analog` Ctrl+4 and simulated-object rules. Right-click a recorded action: `Delete Action`, `Edit Action`, `Try Action`. [Standard mode](Guide/recording_activity_dialog#standard-mode-features) · [Advanced mode](Guide/recording_activity_dialog#advanced-mode-features) · [Context menu](Guide/recording_activity_dialog#context-menu)
+- Recording again adds the new steps and objects to the test. [Multiple Recordings](Guide/multiple_recordings)
+- Learn instead of record when you only need the object: hover it and press Ctrl+2; then use it in RVL or JavaScript. [Learn an Object](Guide/learn_object) · [Learning](Guide/object_learning)
+- Desktop: Select an Application to Record lists running applications (`Refresh`, `Finder Tool`) and the library to use (`Auto` by default); the `Run Application` tab starts one. Ctrl+`Record` reopens it; Shift+`Record` opens library selection. [Select an Application](Guide/select_an_application_to_record_dialog) · [Choosing a Windows library](Guide/windows_applications#choosing-the-right-windows-library) · [Shortcuts](Guide/change_the_libraries_being_use#keyboard-shortcuts)
+- Web: create the test with test type Web and a Selenium profile such as `Selenium - Chrome`; recording with Selenium needs Chrome or Edge, playback works in other browsers too. [Web tutorial](Guide/tutorial_record_and_playback#open-rapise-and-create-new-test) · [Selenium WebDriver](Guide/selenium_webdriver)
+- Mobile: prepare Appium and a device, create a profile in `Settings > Mobile` and `Test URL` it, then `Record`; learn objects with Mobile Spy. [Mobile Testing](Guide/mobile_testing2) · [Preparing for Android](Manuals/Preparing_for_Android_Testing) · [Preparing for iOS](Manuals/Preparing_for_iOS_Testing)
+- Drawing or signatures: `Adv.>>` > `Analog`. [Analog Recording](Guide/analog_recording)
+- Checkpoints: `Verify` (Ctrl+1) opens Verify Object Properties: tick properties, set values; `Exists` and `Visible` check presence (6.6+). [Verify Object Properties](Guide/verify_object_properties) · [Checkpoints](Guide/checkpoints) · [RVL Assertions](RVL/Assertions)
+- AI-assisted recording: tag a web test case `airecorder` so recorded and AI steps get self-healing SmartActions. See section 9, Self-Healing. [Enabling AI Recorder](Guide/web_self_healing#enabling-ai-recorder)
+
+---
+
+## 5. Edit Tests
+
+### RVL Editor
+
+- Open with the toolbar `RVL` button or by opening a `.rvl.xlsx` file. [RVL Editor](Guide/rvl_editor#how-to-open)
+- Columns: `Flow`, `Type` (`Action`, `Param`, `Output`, `Variable`, `Assert`, `Condition`), `Object`, `Action`, `ParamName`, `ParamType`, `ParamValue`. Dropdowns offer the objects of the repository, global objects and `Functions`. [Columns](RVL/Columns#default-columns) · [Dropdowns](Guide/visual_language#the-power-of-dropdowns)
+- Typing: Tab autocompletes; F2 edits a cell without auto-correction; `Params` button or Ctrl+P shows an action's optional parameters; F12 goes to a definition; Shift+Enter, Ctrl+D and more. [Auto-completion](Guide/rvl_editor#auto-completion) · [Action params](Guide/rvl_editor#action-params) · [Shortcuts](Guide/rvl_editor#rvl-editor-shortcuts)
+- Right-click menu: `Find '<object>' in Object Tree`, `Flash`, `Show XPath/Location for`, `Rename '<object>'...` (updates all references), `Play This Sheet`, `Play Selection`, `Play From Here`, `Wrap Selection Into If`, `Wrap Selection Into Loop`, `Extract Selection as new Sheet`, `Copy Selection as JavaScript`, row editing. [Context Menu](Guide/rvl_editor#context-menu) · [Sheet tab menu](Guide/rvl_editor#sheet-tab-context-menu)
+- RVL Toolbox on the right lists actions and snippets to drag in (6.7+). [RVL Toolbox](Guide/rvl_editor#rvl-toolbox)
+- Language, one page each: [Sheets](RVL/Sheets) (`RVL.DoPlaySheet`, common `#` sheets, `Common.rvl.xlsx`), [Actions](RVL/Actions) (`?` flow acts only if the object is found), [Parameters](RVL/Params), [Variables](RVL/Variables), [Comments](RVL/Comments), [Conditions](RVL/Conditions), [If Else](RVL/IfElse), [Loops](RVL/Loops), [Maps](RVL/Maps), [Preamble](RVL/Preamble), [Repository](RVL/Repository), [AI command](AI/ai_command). Summary: [RVL Cheat Sheet](RVL/Cheatsheet).
+- Parameter value dropdowns come from `Dropdowns.xlsx`. [Param Dropdowns](Guide/rvl_editor#param-dropdowns) · [Dropdowns.xlsx](Intro/framework#dropdownsxlsx)
+- Drag a spreadsheet into a sheet to define a Map. [Define a Map by drag&drop](Guide/rvl_editor#define-a-map-by-dragdrop)
+
+### JavaScript
+
+- `.js` files open in the Source Editor: code completion (Ctrl+Space), syntax checking into the Warning view, `Edit > Format Document` (8.1+). [Source Editor](Guide/source_editor) · [Code Completion](Guide/code_helper) · [Syntax Checking](Guide/syntax_checking)
+- Where code goes: `Main.js` (entry point `Test()`), `User.js` (your functions), `Objects.js` (learned objects); test events such as `SeSOnTestInit`, `SeSOnTestFinish`, `SeSOnTestFailed`. [Understanding the Script](Guide/understanding_the_script) · [Global Variables](Guide/global_variables) · [Defining Functions](Guide/defining_functions)
+- Node.js is the JavaScript engine (JScript is the older one); npm packages through `Tools > Npm Console`. [NodeJS support](Guide/jscript_language_reference#nodejs-support-features-and-limitations) · [Npm Console](Guide/jscript_language_reference#npm-console)
+- AI help for JavaScript: the AI Code Assistant chat (section 12, AI Features).
+
+### Files of a test
+
+- Test Files view: the `Filter` box accepts wildcards (`*.js`, `Common*`); right-click a folder for `Add File(s)`, `Create > ...`, `New Group` (virtual), `New Folder` (on disk); right-click a file for `Open as Spreadsheet`, `Open as Text`, `Open Externally`, `Remove from Test`, `Remove from Disk`. [Folder menu](Guide/test_files_dialog#folder-context-menu) · [File menu](Guide/test_files_dialog#context-menu-file) · [Show files in folder](Guide/test_files_dialog#adding-files-from-test-folder)
+- Spreadsheets (`.xlsx`) open in the Spreadsheet Viewer. [Spreadsheet Viewer](Guide/spreadsheet_editor) · [Toolbar](Guide/toolbar_spreadsheet)
+
+---
+
+## 6. Run and Debug
+
+- `Play` (toolbar, `Test > Play`) runs the test. In a framework it opens Choose Test Case: pick one or several test cases (8.1+), a `Configurations...` set (8.1+) and `Parameters...`. A test case's own `Play` in the Object Tree runs it directly; `Play All` / `Play All (Recursive)` on a folder runs a batch (skipping cases tagged `template` or `skip`). [Playback](Guide/playback#usage) · [Choose Test Case](Guide/test_to_play_selector) · [Test case menu](Guide/object_tree#test-case-context-menu) · [Test case tags](Guide/object_tree#test-case-tags)
+- Run part of an RVL sheet: select rows, right-click `Play Selection`; or `Play From Here`, `Play This Sheet`. Shift+`Play` repeats the last selection. [RVL context menu](Guide/rvl_editor#context-menu) · [Replay RVL selection](Guide/playback#replay-rvl-selection)
+- During playback the Test Execution Monitor shows progress with `Pause`, `Stop` (Shift+Ctrl+F12) and `Hide`; it can be turned off in Rapise Settings. [Execution Monitor](Guide/playback#test-execution-monitor)
+- Repeat a test, change its entry point, stop or not on the first error: `Test > Test Settings` (`Iteration Count`, `EntryPoint`, `StopOnError`). [Test Settings: Execution](Guide/settings_dialog#execution) · [Advanced](Guide/settings_dialog#advanced) · [Change Test Entry Point](Guide/change_test_entry_point)
+- More detail in the Output view: `Tools > Verbose Level` (`No Verbose`, `Level 1 (Minimal)` by default, `Level 2 (Normal)`, `Level 3 (Flood)`, `Level 4 (Overflood)`). [Verbosity Levels](Guide/verbosity_levels)
+- Debug JavaScript: `Tools > Debugger` to enable, F9 for a breakpoint, `Play`, then F10/F11, Watch and Call Stack views, hover tooltips. [Internal Debugger](Guide/internal_debugger) · [Breakpoints](Guide/breakpoints) · [Control Execution](Guide/control_execution)
+- Keep the browser or app open between runs and continue from the failed step: reconnect WebDriver or mobile sessions. [Reconnect WebDriver Session](Guide/selenium_reconnect) · [Reconnect Mobile Session](Guide/mobile_reconnect)
+- Run outside the IDE: see section 11, Git, command line and CI.
+
+## 7. Read Results
+
+- After playback the report opens in the Report Viewer (unless `Show Report` is off in Test Settings); in a framework, a test case's `Last Report` in the Object Tree reopens it. Reports are `.trp` files under `Reports`, also written as `last.tap` and HTML. [Report Viewer](Guide/report_viewer) · [Automated Reporting](Guide/automated_reporting) · [Report Formats](Guide/automated_reporting#report-formats)
+- Failed steps are red. Filter rows with the filter row (by status, text, custom criteria), group by dragging a column header, switch `Report > Plain | Hierarchical | Images`. [Report Filtering](Guide/report_filtering) · [Column Grouping](Guide/automated_reporting#column-grouping)
+- Export: `Report > Export to HTML | Excel | PDF | XPS`. [Report menu](Guide/menu_and_toolbars#report)
+- Screenshots of each step or on failure: `Test Settings` Screen Capture, or in a framework `Parameters...` > `Capture Execution`; `Include in Report` sends them to Spira. [Screen Capture](Guide/settings_dialog#screen-capture) · [Screenshots](Guide/screenshots)
+- Write your own report rows and columns: `Tester.Message`, `Tester.Assert`, `Tester.SetReportAttribute`. [Writing to the Report](Guide/writing_to_the_report)
+
+---
+
+## 8. Objects and Locators
+
+- Object Tree, right-click an object: `Flash` (finds and highlights it in the running application, opening it if needed), `Re-Learn`, `Rename`, `Clone`, `Add Parameter`, `Delete`, `Add Repository Object` (from a template). [Object context menu](Guide/object_tree#context-menu-object) · [KB: check that Rapise finds an object](Manuals/kb#kb375-how-to-check-that-rapise-can-find-an-object-on-screen) · [KB: re-learn an object](Manuals/kb#kb428-how-to-relearn-an-object)
+- `Filter` box at the top of the Object Tree narrows the list. [Filtering](Guide/object_tree#filtering)
+- Spies show an application's object tree and properties and learn objects: `Tools > Spy > ...` — Web, UIAutomation (WPF, Silverlight, SWT), Managed (.NET WinForms), Java, Accessible (MSAA: MFC, ATL, Qt, VB), Mobile. [Object Spy](Guide/object_spy#select-spy) · [Spy Dialog](Guide/ses_spy_dialog)
+  - Web Spy: `Get Snapshot`, `Track`, an XPath/CSS field with `Test`, `Learn`, `Verify`; maintenance mode shows the test's objects so you can test and `Relearn` their locators (6.2+). [Web Spy](Guide/web_spy) · [Maintenance mode](Guide/web_spy#maintenance-mode)
+  - Mobile Spy: `Get Snapshot`, `Learn Object`, `Test Locator` (Mobile Test Locator dialog), gestures, maintenance mode. [Mobile Spy](Guide/object_spy_mobile) · [Mobile Test Locator](Guide/mobile_test_locator_dialog)
+- Locators: how Rapise finds objects, and how to override locator parameters. Web objects use XPath (or CSS with the `css=` prefix); frames `@@@` and shadow DOM `@#@` in XPath; `:visible` in CSS (9.1+). Desktop: UIAutomation locators (wildcard `**` 9.1+), Java locators. [Object Locator](Guide/object_locator) · [XPath](Guide/xpath) · [CSS](Guide/css) · [UIAutomation Locators](Guide/uiautomation_locator) · [Java Locators](Guide/java_locator)
+- Which XPath recording produces: `Settings > Web Spy` > `XPath Type to Learn`; rules per application in `WebAppProfile.json` (Test Files > `Create... > WebAppProfile.json`): clickable elements, anchors, attributes to ignore. [Web Spy Settings](Guide/web_settings#different-types-of-xpath) · [Web Application Profile](Guide/web_app_profile)
+- Move or copy objects between tests or into Page Objects: `Tools > Object Manager` (`Copy Right`, `Copy All Right`, `Move Right` 8.4+, `Remove Right`). [Object Manager](Guide/object_manager)
+- Reuse an object definition as a template in a framework. [Object Templates](Guide/object_templates)
+- Objects that no library recognizes: simulated objects (clicks and keys at positions). [Simulated Objects](Guide/simulated_objects) · [Deal with a Simulated Object](Guide/deal_with_a_simulated_object)
+- Web pages wait for elements automatically with Selenium (8.3+). [Auto-waiting](Guide/web_auto_waiting)
+
+## 9. Self-Healing, SmartAction and Modernize
+
+- When a web object is not found, SmartAction uses the object's description and AI vision to find it, the test goes on, and the new locator is saved to a `.jspatch` file. After the run the JSON Patch Editor lets you `Apply`, `Apply All for Object`, `Apply Pending for File`, `Apply All Pending`, `All Done`. [How Self-Healing Works](Guide/web_self_healing#how-self-healing-works) · [SmartAction](Guide/web_smart_action) · [JSON Patch Editor](Guide/web_smart_action#applying-patches-with-the-json-patch-editor)
+- Turn it on for recording with the `airecorder` tag (per framework in the Web Test Setup dialog or per test case). It needs Inflectra.ai or your own AI provider. [Enabling AI Recorder](Guide/web_self_healing#enabling-ai-recorder) · [Self-Healing](Guide/web_self_healing)
+- `Test > Modernize` (9.1+) re-heals all objects of a test at once and writes a patch to review. [Modernize Command](Guide/web_self_healing#modernize-command)
+- A step that may or may not be needed (an optional popup): start its description with "Optional.". [Optional actions](Guide/web_smart_action#optional-actions)
+- Switch healing off: `g_saDisableHealing = true` (for example in CI), or per object (9.1+). [Disabling Self-Healing](Guide/web_self_healing#disabling-self-healing) · [Command line](Guide/command_line#disabling-self-healing)
+- RVL and JavaScript differ in where SmartAction data is stored. [Comparison](Guide/web_self_healing#comparison)
+
+## 10. Browsers, Mobile Devices, Web Services, Other Technologies
+
+- Browsers: Selenium profiles in `Settings > Selenium` (`Test`, `Duplicate`, `Create`, `Delete`; remote `URI`, `Chrome Specific` options also used by Edge, BrowserStack, local profiles 6.3+, `{Param}` placeholders 8.3+). Drivers are downloaded automatically (7.3+). `Tools > Chrome for Testing` downloads a fixed Chrome version and creates a profile for it, so browser updates do not break tests. [Selenium Settings](Guide/selenium_settings_dialog) · [Setting Up Selenium](Guide/setting_up_selenium) · [Setting Up Web Browsers](Guide/setting_up_web_browsers)
+- Run in another browser: pick it in the profile dropdown and `Play`. Several browsers in one run: a framework Browser parameter with `Multiselect`. [Cross Browser Testing](Guide/cross_browser_testing) · [Browser parameter](Guide/Frameworks/parameters#browser-parameter)
+- Older native browser profiles (not Selenium) are legacy; they are edited in `Settings > Browser`. [Browser Settings](Guide/browser_settings)
+- Mobile: `Settings > Mobile` profiles (Appium URL, device clouds, `Test URL`). [Mobile Settings](Guide/mobile_settings_dialog)
+- Web services: `Tools > Web Services` creates a `.rest` or `.soap` file; the REST editor's script steps create test code, the SOAP editor has `Invoke`, `Record`, `Verify`. [Web Service Testing](Guide/web_service_testing) · [REST Editor](Guide/rest_definition_editor) · [SOAP Editor](Guide/soap_definition_editor) · [Add Web Service](Guide/dialog_add_web_service)
+- Desktop: [Desktop Testing](Guide/windows_applications) · Java [AWT/Swing](Guide/java_awt_swing_testing) / [SWT](Guide/java_swt) · [Qt](Guide/qt_framework_testing) · [Microsoft Dynamics](Guide/microsoft_dynamics) · [Salesforce](Guide/salesforce_com) · [Oracle Forms](Guide/oracleforms_testing) · [COM](Guide/com_testing_support) · [DLL](Guide/dll_testing)
+- Libraries (which technologies Rapise records and plays): `Tools > Libraries`. [Object Libraries](Guide/recording_library) · [Change the Libraries](Guide/change_the_libraries_being_use)
+- Manual tests: `View > Manual Steps`, `Tools > Manual Steps` or the `Manual Steps` toolbar button opens the Manual Test Editor, `Test > Execute Manual` runs it (Manual Playback: `Pass`, `Fail`, `Blocked`, `Caution`, `Log Incident`); semi-manual steps can call JavaScript. [Manual Testing](Guide/manual_testing) · [Manual Test Editor](Guide/manual_test_editor) · [Manual Playback](Guide/manual_playback) · [Semi-Manual](Guide/semi_manual_testing)
+
+---
+
+## 11. Frameworks, Data, Spira, Git, Command Line and CI
+
+### Framework structure
+
+- Object Tree in a framework: Test Cases (create, import, play all, tags), Modules / Pages, Shared files. Right-click a test case: `Play`, `Record`, `Last Report`, `Clone`, `Move`, `Rename`, `Delete`, `Tags`; Shift+right-click sets `draft`, `template`, `skip`. [Framework mode](Guide/object_tree#testing-framework-mode) · [Test case menu](Guide/object_tree#test-case-context-menu) · [Framework common actions](Guide/Frameworks/frameworks#testing-framework-common-actions)
+- How to grow a framework: a few test cases, regular runs, then Page Objects, then parameters and configurations. [Framework Development Workflow](Guide/Frameworks/frameworks#framework-development-workflow)
+- Reusable actions (login, open module, add record): `File > Add To Framework > Module / Page Object`; in RVL each sheet is an action, its signature declares parameters (`DoLogin(user, /**string*/pwd)`); call it as `MyPage.DoLogin`; try it with `Invoke <Action>` in the Object Tree. Ready-made public Page Objects (8.2+). [Page Objects](Guide/Frameworks/pageobjects) · [RVL Action Parameters](Guide/Frameworks/pageobjects#rvl-action-parameters) · [Public Page Objects](Guide/Frameworks/pageobjects#public-page-objects)
+- Shared code and data: `Common.js` and shared scripts; framework-wide RVL variables and maps in `Common.rvl.xlsx`; files tagged `shared` load for every test case. [Managing Common Data](Guide/Frameworks/frameworks#managing-common-data) · [Common.rvl.xlsx](RVL/Sheets#commonrvlxlsx) · [Defining Global Functions](Guide/Frameworks/frameworks#defining-global-functions)
+- Shared node of the Object Tree: `New Dropdowns.xlsx`, `New Common.rvl.xlsx`, new script or spreadsheet. [Shared node menu](Guide/object_tree#shared-node-context-menu)
+- A framework stores its structure in `Framework.json` and `Parameters.json`; file layout for AI tools: [llms-framework.txt](https://rapisedoc.inflectra.com/llms-framework.txt).
+
+### Parameters, configurations, data
+
+- Framework parameters: Spira Dashboard `Parameters` view, `Add Parameter` (boolean, number, string, password, select, browser, mobile, datacolumn, environment 9.1+), `Add Input Data File`; read with RVL ParamType `testparam` or `Tester.GetParam`. Configurations are named sets of parameter values. [Parameters and Configurations](Guide/Frameworks/parameters) · [Parameter types](Guide/Frameworks/parameters#supported-parameter-types) · [Configurations](Guide/Frameworks/parameters#configurations)
+- Use a configuration for one local run: `Configurations...` in Choose Test Case; for a test set: the configuration dropdown in the Framework view. [Configurations in Choose Test Case](Guide/test_to_play_selector#configurations)
+- Data-driven tests in RVL: a Map (`Rows`, `Columns`, `Table`, `Range` from an Excel/CSV file, `Database`) and `Loop` over it; in JavaScript `Spreadsheet`. AI can generate map data (AI Dashboard). [Data-Driven Testing](Guide/ddt) · [DDT intro](Intro/ddt) · [Maps](RVL/Maps) · [Loops](RVL/Loops#loop-map)
+
+### Spira
+
+- Connect: `Settings > SpiraTest` (`URL`, `User Name`, `API Key`, `Test`). [Connecting to SpiraTest](Guide/spiratest_integration#connecting-to-spiratest) · [Credentials](Guide/spiratest_integration#credentials)
+- Spira Dashboard (`View > Spira Dashboard`) views: Framework (test sets and their test cases, `Execute`, `Schedule`, `Sync with Spira`), Parameters, Test Cases (`Execute`, `Flaky`, `Open This Test`), Test Sets (`Add Test Cases`, `Execute`, `Rerun` failed, `Schedule...`, `Show Execution Plan...`, `Git Credentials`), Test Runs (`Filter by Tag`, Test Matrix), Automation Hosts, Incidents. Offline mode without Spira (9.1+). [Navigation](Guide/spira_dashboard_2#navigation) · [Manage Test Sets](Guide/spira_dashboard_2#manage-test-sets) · [Test Sets View](Guide/spira_dashboard_2#test-sets-view) · [Offline Mode](Guide/spira_dashboard_2#offline-mode-without-spira-integration)
+- Put a framework into Spira: `Sync with Spira` in the dashboard creates the test cases and test sets and uploads the files; sync again after adding test cases. A teammate loads it with `Load from Spira` and syncs. [Sync with Spira](Guide/spira_dashboard_2#sync-with-spira) · [Synchronizing](Guide/spiratest_integration#synchronizing) · [Loading a Test](Guide/spiratest_integration#loading-a-test-from-spiratest)
+- Conflicting changes: the Synchronize Files dialog offers `Diff...` and `Resolve...`; a `.gitignore` filter keeps files out of sync (9.1+). [Diff / Merge](Guide/Frameworks/diffmerge) · [Ignore filter](Guide/spira_dashboard_2#ignore-filter-for-sync)
+- Link a test to a Spira test case or unlink it: `Test > Spira Properties`. [Spira Properties](Guide/spira_properties_dialog)
+- Scheduled and remote runs: RapiseLauncher on an automation host (`Tools > Rapise Launcher`; tray `Configuration`: `Automation Host Token`, `Polling Frequency`, auto-create host 9.1+; status screen `Force Poll`, `Force Execute`, `Cancel Execution`). Schedule from the dashboard (`Schedule...`, 7.4+) or in Spira (automation host, planned date, status Not Started, type Automated). [Using RapiseLauncher](Guide/spiratest_integration#using-rapiselauncher) · [Client Configuration](Guide/spiratest_integration#client-configuration) · [Test Set Scheduling](Guide/spira_dashboard_2#test-set-scheduling) · [Creating and Scheduling Test Sets](Guide/spiratest_integration#creating-and-scheduling-the-test-sets)
+- Faster or bigger runs: parallel execution (7.1+), agent pools (same token on several hosts, 8.5+), load-balancing mode (8.5+), dynamic test sets chosen by tags or names (8.4+). [Parallel Execution](Guide/spira_dashboard_2#parallel-execution) · [Agent Pools](Guide/spiratest_integration#agent-pools) · [Load Balancing](Guide/spiratest_integration#load-balancing-mode) · [Dynamic Test Sets](Guide/dynamic_test_sets)
+- Unstable tests: mark `Flaky`, automatic reruns (`Max rerun attempts`); compare runs across browsers or data with the Test Matrix. These need `Create Custom Properties for Rapise` once. [Flaky Tests](Guide/spira_dashboard_2#flaky-tests) · [Automatic Rerun](Guide/spira_dashboard_2#automatic-rerun) · [Test Matrix](Guide/spira_dashboard_2#test-matrix) · [Setup Custom Properties](Guide/spira_dashboard_2#setup-custom-properties)
+- Log a defect: `Tools > New Incident`, or `Log Incident` during manual playback. [Incident Logging](Guide/incident_logging)
+- Spira from AI: the Spira MCP server in agentic chat (section 12, AI Features).
+
+### Git, command line and CI
+
+- Keep the framework in Git and link it to Spira (Spira stores a `%GITROOT%` reference); RapiseLauncher can check it out with `Git Credentials`, or CI checks it out. Git commands run in an external client. [Git Integration](Guide/git_integration) · [Saving a framework into Git](Intro/framework#saving-a-framework-into-git) · [Checkout Externally](Guide/git_integration#checkout-externally)
+- Command line on Windows: `play.bat` or `SeSExecutor.js` with `-config:`, `-eval:`, `-testset:` and JUnit `-report:` (9.1+); RapiseLauncher with `-testset:` for Spira test sets. [Command Line](Guide/command_line) · [Command-line options](Guide/command_line#command-line-options) · [RapiseLauncher arguments](Guide/spiratest_integration#command-line-arguments)
+- Linux, macOS and Docker (web and API tests, 8.5+): the npm package, `npx rapise` and `npx rapiselauncher`; pipelines for GitHub Actions, Azure DevOps, AWS CodeBuild, Jenkins. [DevOps](Intro/devops) · [Linux/macOS/Docker](Intro/devops#linux-macos-docker) · [CI/CD Integration](Intro/devops#cicd-integration)
+- Azure DevOps with Spira test sets (RapiseLauncher extension) or Git-stored tests (Rapise Test Adapter). [Azure DevOps](Guide/vstest) · [RapiseLauncher extension](Guide/vstest_rl)
+- Video of a run: `g_enableVideoRecording=true`. [Record Playback Videos](Guide/spiratest_integration#record-playback-videos)
+- Robotic process automation with RapiseLauncher: [RPA](Manuals/Rpa).
+
+---
+
+## 12. AI Features
+
+### Set up
+
+- `View > AI Dashboard` > `Settings`: `Provider` is `Inflectra.ai`, `Amazon Bedrock`, `Azure`, `OpenAI` or `Google`; fill its fields, choose a `Model ID` (a dropdown of tested models 9.1+), `Proxy` if needed, then `Test Model`. `Scope` is `global` or `local` (per framework, created with `local[create]`, overrides global). Shift+Ctrl+Q shows more settings. [AI Dashboard Settings](AI/ai_dashboard#settings) · [Model ID dropdown](AI/ai_dashboard#model-id-dropdown) · [Proxy](AI/ai_dashboard#proxy)
+- Inflectra.ai (8.6+) needs no keys: Rapise connected to a Spira where Inflectra.ai is enabled. From 9.1 it also serves AiTranslator and AiRobot. [Inflectra.ai](AI/ai_dashboard#inflectraai) · [9.1 enhancements](AI/ai_dashboard#rapise-91-enhancements)
+- Own provider details: [Amazon Bedrock](AI/ai_dashboard#amazon-bedrock) · [Azure](AI/ai_dashboard#azure) · [OpenAI](AI/ai_dashboard#openai) · [Google](AI/ai_dashboard#google)
+- Where AI files are and which to commit (`options.json`, `AIPrompt.txt`, `AIExamples.txt`, `ai.commands.json`). [Framework folders](AI/ai_dashboard#framework-folders) · [Source control](AI/ai_dashboard#source-control)
+
+### AI Dashboard chats
+
+- `Chats` lists past chats; a new chat asks for a workflow; starred chats go to `Snapshots`. [Chats](AI/ai_dashboard#chats) · [Snapshots](AI/ai_dashboard#snapshots)
+- Workflows: `AI Chat` (general, attach screenshots and files), `Test Scenario from Text` / `from Image` (generates `AI` steps to apply to a sheet), `Generate Data List` / `Generate Data Table` / `Generate More Rows` (RVL maps), `AI Code Assistant` for JavaScript (8.6+, `@<file name>` adds files, `Apply` inserts at the cursor), `MCP Agent` (9.1+). [AI Chat](AI/ai_dashboard#ai-chat) · [Test Scenario from Text](AI/ai_dashboard#test-scenario-from-text) · [Generate Data Table](AI/ai_dashboard#generate-data-table) · [AI Code Assistant](AI/ai_dashboard#ai-code-assistant)
+
+### AI in RVL
+
+- AI Command: an `AI` row whose Object cell says what to do in plain words (`{name}` placeholders filled by `Param` rows). Rapise generates code once, caches it in `ai.commands.json` and replays it without AI until the text changes. Recommended order: Page Objects with high-level actions, learned objects, then AI Commands. [AI Command](AI/ai_command) · [Implementation](AI/ai_command#implementation) · [Recommended workflow](AI/ai_dashboard#overview)
+- AI Panel: double-click an AI Command's line number or hover the cell and click `Show AI Panel` (also for a selected range); the toolbar button shows all AI Commands of the sheet. Per command: generate, AI edit (sparkles, 9.1+), play, open chat, thumbs up/down to save good and bad examples. Panel menu: generate all, run all, dock. [AI Panel](AI/ai_dashboard#ai-panel) · [How to Open](AI/ai_dashboard#how-to-open_1) · [Command Menu](AI/ai_dashboard#command-menu)
+- In-place AI editing (9.1+): sparkles, type a correction such as `Use object ID: Login_Username`, Enter. Click an object ID to find it in the Object Tree (9.1+). [In-Place AI Editing](AI/ai_dashboard#in-place-ai-editing) · [Object Navigation](AI/ai_dashboard#object-navigation)
+- RVL AI Assistant (9.1+): sparkles next to the test case title in the AI Panel; describe a change to the whole sheet, review the patch, `Apply`. [RVL AI Assistant](AI/ai_dashboard#rvl-ai-assistant)
+- Steer generation: `##` prompt comment rows, `## #include`, `## #module` to include or exclude Page Objects (8.6+), `AIPrompt.txt` for rules applied to every command, `AIExamples.txt` from thumbs. Multiline commands: F2 then Enter, or `AI Command Multiline Mode` in Rapise Settings. [Prompt Comments](AI/ai_command#ai-prompt-comments) · [Including Modules](AI/ai_command#including-and-excluding-modules-page-objects) · [Shared Instructions](AI/ai_command#shared-instructions) · [Examples](AI/ai_command#tuning-with-positive-and-negative-examples) · [Multiline](AI/ai_command#editing-and-multiline-commands)
+- AiTranslator (9.1+): in test cases tagged `airecorder`, `AI` steps become SmartActions automatically when the test runs; new objects come as a patch for the JSON Patch Editor. [AiTranslator](AI/aitranslator) · [Automatic Invocation](AI/aitranslator#automatic-invocation)
+
+### AI at runtime
+
+- AiRobot: the AI operates the application from screenshots for every run (`AiRobot.DoWebBrowser`, `DoFullScreen`, `DoWindow`); built in from 9.1, earlier imported as a public Page Object. [AiRobot](AI/airobot) · [Environment recommendations](AI/airobot#environment-recommendations)
+- AiTester: ask the AI about text or screenshots during a run and assert on the answer (`DoTextQuery`, `DoWebImageQuery`, `AssertLastResponse`), generate data. [AiTester](AI/aitester) · [Assess application state](AI/aitester#assess-application-state)
+
+### Agentic chat and MCP
+
+- `MCP Agent` chat (9.1+): the AI plans and calls tools of the Rapise MCP server (test cases, runs, repositories, Page Objects) and the Spira MCP server (test cases, test sets, requirements, releases, runs, hosts). It works with Inflectra.ai, Amazon Bedrock, OpenAI and Azure OpenAI. [Agentic Chat with MCP](AI/agentic_mcp) · [Supported servers](AI/agentic_mcp#supported-mcp-servers)
+- Which tools run without asking: AI Dashboard `Settings` > `MCP` tab, per tool `auto`, `ask` or `deny`; a switch turns a server on or off; `Always Approve` in a plan preview. Limits and timeouts are in the MCP Agent workflow (`mcp-agent.json`). [Tool approval](AI/agentic_mcp#tool-approval-policies) · [Configuration options](AI/agentic_mcp#configuration-options)
+- External AI agents (an IDE assistant) reach Rapise through the MCP server: set `MCP Server Port` in `Settings > Global` (0 is off; one Rapise instance). [MCP Server](Guide/options_dialog#mcp-server)
+
+### Which AI feature
+
+| Need | Feature |
+|---|---|
+| Write steps in plain words once, replay as normal code without AI cost | AI Command [AI Command](AI/ai_command) |
+| Plain-word steps that become self-healing SmartActions | AiTranslator (9.1+) [AiTranslator](AI/aitranslator) |
+| Let the AI drive an app that is hard to automate, every run | AiRobot [AiRobot vs AI Command](AI/airobot#airobot-vs-ai-command) |
+| Check what the screen shows, or a fuzzy text answer | AiTester [AiTester](AI/aitester) |
+| Recover objects after UI changes | Self-healing, Modernize [Self-Healing](Guide/web_self_healing) |
+| Draft a test from a description or a screenshot | `Test Scenario from Text/Image` chat [Test Scenario](AI/ai_dashboard#test-scenario-from-text) |
+| Test data | Generate Data chats [Data Table](AI/ai_dashboard#generate-data-table) |
+| JavaScript help | AI Code Assistant [AI Code Assistant](AI/ai_dashboard#ai-code-assistant) |
+| Change many steps of a sheet at once | RVL AI Assistant (9.1+) [RVL AI Assistant](AI/ai_dashboard#rvl-ai-assistant) |
+| Do things in Rapise and Spira by chatting | MCP Agent (9.1+) [Agentic Chat](AI/agentic_mcp) |
+
+Full comparison: [AiTranslator vs other AI features](AI/aitranslator#aitranslator-vs-other-ai-features).
+
+---
+
+## 13. When Something Goes Wrong
+
+| The user says | What to try |
+|---|---|
+| "Object not found" / a step fails on an object | `Flash` the object in the Object Tree; `Re-Learn` it, or fix the locator in Web Spy maintenance mode; dynamic IDs: `WebAppProfile.json` rules; slow page: auto-waiting, `ObjectLookupAttempts`; let self-healing recover it and apply the patch, or `Test > Modernize` (9.1+). [Typical automation issues](Intro/automation#object-not-found) · [Object menu](Guide/object_tree#context-menu-object) · [Web Spy maintenance](Guide/web_spy#maintenance-mode) · [Web Application Profile](Guide/web_app_profile) · [Self-Healing](Guide/web_self_healing) |
+| The wrong element is clicked | Make the locator unique (Web Spy `Test` shows the matches), anchors in WebAppProfile, CSS `:visible` (9.1+), UIA sibling index. [XPath in Web Spy](Guide/xpath#in-web-spy) · [Anchors](Guide/web_app_profile#anchors) · [CSS visibility](Guide/css#visibility-pseudo-classes) · [UIA issues](Guide/uiautomation_locator#common-issues) |
+| Clicks on web DIVs or SPANs are not recorded | `clickable` and `treatMouseUpAsClick` in WebAppProfile. [WebAppProfile format](Guide/web_app_profile#webappprofile-format) |
+| Elements in frames or shadow DOM | XPath `@@@` and `@#@`. [Frames](Guide/xpath#frames) · [Shadow DOM](Guide/xpath#shadow-dom) |
+| A desktop app records nothing or the wrong things | Try another library (Auto, UIAutomation, Generic, third-party, Advanced Accessibility) with Shift+`Record` or `Tools > Libraries`; inspect with the matching spy. [Choosing a Windows library](Guide/windows_applications#choosing-the-right-windows-library) · [KB: actions not recorded](Manuals/kb#kb114-my-actions-are-not-recorded) · [KB: which library](Manuals/kb#kb133-the-recorder-asks-for-a-library-which-should-i-choose) |
+| Java or Qt controls are not visible | Java Access Bridge; Qt accessibility plug-in. [Java Bridge](Guide/java_awt_swing_testing#java-bridge-installation) · [Qt](Guide/qt_framework_testing#usage) |
+| The browser does not start, driver errors | `Test` the profile in `Settings > Selenium`; drivers download automatically (7.3+); use a `Selenium - Chrome` profile instead of old Chrome HTML. [Setting Up Selenium](Guide/setting_up_selenium) · [KB: connection to Chrome failed](Manuals/kb#kb652-resolving-connection-to-chrome-failed) · [Chrome](Guide/setting_up_web_browsers#chrome) |
+| The test is too fast or flaky on timing | Auto-waiting (8.3+), `ObjectLookupAttempts`, slowing execution. [Auto-waiting](Guide/web_auto_waiting) · [KB: slow down execution](Manuals/kb#kb301-ways-to-slow-down-test-execution) |
+| An optional popup breaks the test | SmartAction "Optional." or the RVL `?` flow. [Optional actions](Guide/web_smart_action#optional-actions) · [Conditional actions](RVL/Actions#conditional-actions) |
+| Where do I see why it failed | Red rows in the report, filter by status, Errors view, higher `Verbose Level`, screenshot on failure. [Report Filtering](Guide/report_filtering) · [Errors View](Guide/errors_view) · [Verbosity](Guide/verbosity_levels) · [Screen Capture](Guide/settings_dialog#screen-capture) |
+| The run stops at the first error / I want it to stop | `StopOnError` in Test Settings. [Execution](Guide/settings_dialog#execution) |
+| The report does not open after a run | `Show Report` in Test Settings; `Last Report` in the Object Tree. [Execution](Guide/settings_dialog#execution) · [Test case menu](Guide/object_tree#test-case-context-menu) |
+| A pane or view disappeared | `View > Show > ...`; reset the layout (hold Shift while starting Rapise, or `Settings > Global` > `Utilities` > `Reset Layout`). [Restoring the Default Layout](Guide/restoring_the_default_layout) |
+| The RVL editor changes my text or does not autocomplete | F2 to edit without auto-correction; Tab to autocomplete; `Params` / Ctrl+P for optional parameters. [Disabling auto-correction](Guide/rvl_editor#disabling-cell-auto-correction) · [Auto-completion](Guide/rvl_editor#auto-completion) |
+| A date from Excel reads as a number | Format the cells as Text. [Cell formatting](Guide/spreadsheet_editor#cell-formatting) |
+| A test case is skipped by Play All | It is tagged `skip` or `template`. [Test case tags](Guide/object_tree#test-case-tags) |
+| My changes or new test cases are not in Spira | `Sync with Spira`. [Sync with Spira](Guide/spira_dashboard_2#sync-with-spira) |
+| Cannot connect to Spira | Full URL (with the customer name for cloud), API key instead of password, role permissions. [Credentials](Guide/spiratest_integration#credentials) · [Artifact Permissions](Guide/spiratest_integration#artifact-permissions) |
+| A scheduled test set does not start on the host | Token of the host, test set status Not Started and type Automated, overdue option, `Force Poll`, `Open Log`. [Server Polling](Guide/spiratest_integration#server-polling) · [Status buttons](Guide/spiratest_integration#buttons) |
+| A parameter or configuration is not applied | Names are case-sensitive; unset values fall back to defaults; check `Show Execution Plan...`. [Configurations](Guide/Frameworks/parameters#configurations) · [Execution Plan](Guide/spira_dashboard_2#test-set-execution-plan) |
+| Tests fail randomly | Mark `Flaky`, automatic rerun, compare in the Test Matrix. [Flaky Tests](Guide/spira_dashboard_2#flaky-tests) · [Automatic Rerun](Guide/spira_dashboard_2#automatic-rerun) |
+| UI tests fail when run over Remote Desktop | RapiseLauncher tray `Disconnect RDP Session`. [Tray Icon Menu](Guide/spiratest_integration#tray-icon-menu) |
+| A sync conflict | `Diff...` / `Resolve...` in Synchronize Files. [Diff / Merge](Guide/Frameworks/diffmerge) |
+| AI is not configured / Inflectra.ai is missing | Inflectra.ai enabled in Spira and Rapise connected to it, or set your own provider; `Test Model`. [Inflectra.ai](AI/ai_dashboard#inflectraai) · [Settings](AI/ai_dashboard#settings) |
+| Model errors with Amazon Bedrock | Anthropic models need an inference profile ARN as `Model ID`. [Amazon Bedrock](AI/ai_dashboard#amazon-bedrock) · [Configuring AWS Bedrock](AI/airobot#configuring-aws-bedrock) |
+| An AI setting is ignored | Local (framework) options override global ones. [Settings](AI/ai_dashboard#settings) |
+| Generated code uses the wrong Page Object or a non-existent action | `## #module`, a `##` comment, better names; thumbs down, fix, thumbs up; `AIPrompt.txt` rules; in-place AI edit. [Including Modules](AI/ai_command#including-and-excluding-modules-page-objects) · [Naming](AI/ai_command#naming) · [Examples](AI/ai_command#tuning-with-positive-and-negative-examples) · [In-Place AI Editing](AI/ai_dashboard#in-place-ai-editing) |
+| A teammate's AI Commands regenerate or lack code | Commit `ai.commands.json`. [Source control](AI/ai_dashboard#source-control) · [Token Saving](AI/ai_command#token-saving) |
+| Enter ends editing of an AI Command | F2, or `AI Command Multiline Mode`. [Multiline](AI/ai_command#editing-and-multiline-commands) |
+| "No MCP tools available" or tool calls time out | The server is switched on in AI Dashboard `Settings` > `MCP` and shows its tools, `MCP Server Port` is set, one Rapise instance; raise `tool_call_timeout_ms`. [No MCP tools](AI/agentic_mcp#no-mcp-tools-available) · [Timeouts](AI/agentic_mcp#tool-calls-timing-out) · [MCP Server](Guide/options_dialog#mcp-server) |
+| AiRobot behaves erratically | Fixed window size, specific prompts, a clean machine. [Environment](AI/airobot#environment-recommendations) · [Writing prompts](AI/airobot#writing-effective-prompts) |
+| Self-healing changes things in CI | `g_saDisableHealing=true`. [Disabling self-healing](Guide/command_line#disabling-self-healing) |
+| The Start Page looks broken | [KB: Start Page layout](Manuals/kb#kb406-rapise-start-page-layout-does-not-display-correctly) |
+
+More answers to specific problems: [Knowledge Base](Manuals/kb).
+
+---
+
+## 14. Choosing Between
+
+| Choice | Guidance |
+|---|---|
+| Framework or standalone test | Frameworks for real projects; a standalone test for a quick check. Sub-tests are deprecated. [Single test mode](Guide/create_new_test_dialog#single-test-mode) · [Tests and Sub-Tests](Guide/tests_and_sub_tests) |
+| RVL or JavaScript | RVL for readable steps, JavaScript for logic and data handling; mix them. [Choice of scripting](Guide/overview#choice-of-scripting-or-scriptless-rapise-visual-language-rvl) · [Page Object RVL vs JS](Guide/Frameworks/pageobjects#page-object-rvl-vs-js) |
+| Record or learn | Learn adds only the object, no step. [Learn an Object](Guide/learn_object#step-7-observe) |
+| Test Settings or Rapise Settings | One test or all tests. [Settings menu](Guide/menu_and_toolbars#settings) · [Rapise Settings](Guide/options_dialog#purpose) |
+| Parameters or configurations | Parameters are values; configurations are named sets of them for a run or test set. [Parameters and Configurations](Guide/Frameworks/parameters) |
+| Copy a framework or use configurations | Configurations or Git branches rather than copies. [Cloning](Guide/Frameworks/frameworks#cloning-of-the-entire-testing-framework) |
+| Spira only or Spira with Git | Spira alone for small teams; Git for larger teams and CI. [Collaboration](Guide/Frameworks/frameworks#collaboration-and-distributed-development) · [When to use Git](Guide/git_integration#when-to-use) |
+| A batch via `RVL.DoPlayTest` or a test set | Test sets keep a status and history per test case. [Running a batch](Guide/Frameworks/frameworks#running-a-batch-of-test-cases) |
+| Agent pool or load balancing | Pools spread many test sets; load balancing splits one large set. [Load Balancing](Guide/spiratest_integration#load-balancing-mode) |
+| XPath or CSS | Recording makes XPath; CSS cannot select by text. Avoid full XPaths. [CSS](Guide/css#purpose) · [XPath minimization](Guide/web_app_profile#xpath-minimization) |
+| Selenium or native browser profiles | Selenium (recommended since 7.3). [Web Browser Profile](Guide/browser_settings#web-browser-profile) |
+| Several browsers | Framework parameters (8+). [Using framework parameters](Guide/cross_browser_testing#using-framework-parameters) |
+| Analog or simulated recording | Simulated objects before analog; analog replays raw mouse events. [Object types](Guide/object_types#value) |
+| Map types | Rows for data feeds, Columns/Table for configurations, Range for Excel/CSV, Database. [Map Types](RVL/Maps#map-types) |
+| Which AI feature | See section 12, Which AI feature. |
+
+---
+
+## 15. Keyboard Shortcuts
+
+- Recording Activity: `Verify` Ctrl+1, `Learn` Ctrl+2, `Finish` Ctrl+3, `Analog` Ctrl+4, `SPY` Ctrl+5. [Recording Activity](Guide/recording_activity_dialog#standard-mode-features)
+- Stop a running test: Shift+Ctrl+F12. [Execution Monitor](Guide/cheatsheet#execution-monitor)
+- Save all: Ctrl+S. Help: F1. Breakpoint: F9. Debugger: F5, F10, F11, Shift+F11, Shift+F5. [Menus](Guide/menu_and_toolbars)
+- RVL editor: Tab, F2, Ctrl+P, F12, Shift+Enter, Ctrl+D. [RVL Editor Shortcuts](Guide/rvl_editor#rvl-editor-shortcuts)
+- AI Dashboard hidden settings: Shift+Ctrl+Q. [Settings](AI/ai_dashboard#settings)
+- All shortcuts: [Cheat Sheet](Guide/cheatsheet).

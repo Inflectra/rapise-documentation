@@ -13212,7 +13212,7 @@ borrower,borrower
 </code></pre></div>
 </div>
 <h3 id="test-matrix">Test Matrix<a class="headerlink" href="#test-matrix" title="Permanent link">&para;</a></h3>
-<p>If a Test Set is configured to run the same Test Cases several times (each time with different input parameters), then you may view the Test Matrix based on the generated Test Runs. Let's look at an example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. The browser type is specified via an input parameter (see the Input Data Table section above for more details). Execution of the test set produces 4 x 2 = 10 test runs. After execution, find one of these test runs on the Test Runs page, right-click it, and choose the <code>Test Matrix</code> menu item. Then we see the matrix:</p>
+<p>If a Test Set is configured to run the same Test Cases several times (each time with different input parameters), then you may view the Test Matrix based on the generated Test Runs. Let's look at an example. Assume that we have a test set of 5 test cases that we want to run on 2 different browsers. The browser type is specified via an input parameter (see the Input Data Table section above for more details). Execution of the test set produces 5 x 2 = 10 test runs. After execution, find one of these test runs on the Test Runs page, right-click it, and choose the <code>Test Matrix</code> menu item. Then we see the matrix:</p>
 <p><img alt="Test Matrix" src="../img/test_matrix.png" /></p>
 <p>If there is more than one input parameter, it is possible to select the one you need from the dropdown list. Clicking on a test case reveals its history of test runs (clickable).</p>
 <h3 id="test-set-execution-plan">Test Set Execution Plan<a class="headerlink" href="#test-set-execution-plan" title="Permanent link">&para;</a></h3>
@@ -13476,7 +13476,7 @@ Repository.json
 <li>Input data (string, empty by default, requires Rapise 7.1+)</li>
 <li>Record videos (boolean, default is false)</li>
 <li>Verbose level (integer, default is 1)</li>
-<li><a href="../git_integration/#using-spira-custom-properties">GitUrl, GitUser, GitPassword, GitBranch, GitRoot</a> (string, empty by default)</li>
+<li><a href="../git_integration/#using-test-set-custom-properties-in-spira">GitUrl, GitUser, GitPassword, GitBranch, GitRoot</a> (string, empty by default)</li>
 <li><a href="#git-credentials-storage">Git Credentials</a> (dropdown value choice, requires Rapise 7.3)</li>
 </ul>
 </li>
@@ -13507,7 +13507,7 @@ Repository.json
 <li>g_enableVideoRecording = false</li>
 </ul>
 </li>
-<li><code>Open This Test</code> in Rapise. It is a shortcut for <a href="../spiratest_integration/#opening-a-test-from-spiratest">Open a test from SpiraTest</a>.</li>
+<li><code>Open This Test</code> in Rapise. It is a shortcut for <a href="../spiratest_integration/#loading-a-test-from-spiratest">Open a test from SpiraTest</a>.</li>
 <li><code>Rename</code> a test case or a test case folder.</li>
 <li><code>Delete</code> a test case.</li>
 <li><code>Open in Spira</code> - opens the current item in a browser window.</li>

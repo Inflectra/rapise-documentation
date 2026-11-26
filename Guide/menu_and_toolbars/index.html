@@ -12185,6 +12185,7 @@
 <ul>
 <li><strong>Start Page</strong> - Opens the Rapise <a href="../start_page/">Start Page</a>.</li>
 <li><strong>Spira Dashboard</strong> - Opens the <a href="../spira_dashboard_2/">Spira Dashboard</a>.</li>
+<li><strong>AI Dashboard</strong> - Opens the <a href="../../AI/ai_dashboard/">AI Dashboard</a>: AI settings and chats.</li>
 <li><strong>RVL</strong> - Opens the <a href="../rvl_editor/">RVL editor</a>.</li>
 <li><strong>Main</strong> - Opens the primary <a href="../understanding_the_script/">test script file</a> (normally <code>Main.js</code>).</li>
 <li><strong>User</strong> - Opens the user functions <a href="../understanding_the_script/">script file</a> containing any user-defined testing functions (called <code>User.js</code>).</li>
@@ -12199,10 +12200,10 @@
 </ul>
 </li>
 <li>
-<p><strong>Manual Steps</strong> - Opens manual test steps for a given step (if any). If no manual steps are defined yet, it creates new ones.</p>
+<p><strong>Manual Steps</strong> - Opens the manual test steps of the current test in the <a href="../manual_test_editor/">Manual Test Editor</a>. If no manual steps are defined yet, it creates new ones.</p>
 </li>
-<li><strong>REST</strong> - Finds and opens a <a href="../soap_definition_editor/">SOAP definition file</a> in the <a href="../content_view/">content view</a>. If no <code>.soap</code> file is yet defined, nothing happens.</li>
-<li><strong>SOAP</strong> - Finds and opens a <a href="../rest_definition_editor/">REST definition file</a> in the <a href="../content_view/">content view</a>. If no <code>.rest</code> file is yet defined, nothing happens.</li>
+<li><strong>REST</strong> - Finds and opens a <a href="../rest_definition_editor/">REST definition file</a> in the <a href="../content_view/">content view</a>. If no <code>.rest</code> file is yet defined, nothing happens.</li>
+<li><strong>SOAP</strong> - Finds and opens a <a href="../soap_definition_editor/">SOAP definition file</a> in the <a href="../content_view/">content view</a>. If no <code>.soap</code> file is yet defined, nothing happens.</li>
 <li><strong>View Manual Test in Spira</strong><ul>
 <li>Manual: Opens the current test in the <a href="../spiratest_integration/">Spira</a> web interface. Remember to use <code>File &gt; Save to Spira</code> if you made any local changes to manual steps.</li>
 </ul>
@@ -12276,6 +12277,7 @@
 <li><strong>Libraries</strong> - This button opens the <a href="../select_an_application_to_record_dialog/">Select an Application Dialog</a>, allowing you to add or change the <a href="../recording_library/">libraries</a> used to record the current test.</li>
 <li><strong>Npm Console</strong> - Shows an <code>npm console</code> for the current testing <a href="../../Intro/framework/">framework</a>. This allows you to quickly install new packages or initialize using an existing <code>package.json</code>.</li>
 <li><strong>Web Services</strong> - Allows you to add a new <a href="../web_service_testing/">web service</a> definition to your Rapise test. Clicking this displays the <a href="../dialog_add_web_service/">Add Web Service</a> dialog box.</li>
+<li><strong>Manual Steps</strong> - Opens the <a href="../manual_test_editor/">Manual Test Editor</a> with the manual steps of the current test, the same as <code>View &gt; Manual Steps</code>.</li>
 <li><strong>Object Manager</strong> - Opens the <a href="../object_manager/">Object Manager</a> add-in, which is used to copy recorded objects between test scripts.</li>
 <li><strong>Chrome for Testing</strong> - Opens the <a href="../setting_up_selenium/#chrome-for-testing-dialog">Chrome for Testing dialog</a>.</li>
 <li><strong>RPA Monitor</strong> - Opens the <a href="../../Manuals/Rpa/">RPA Monitor</a>.</li>
@@ -12288,6 +12290,7 @@
 <li><strong>Global</strong> - Brings up the <a href="../options_dialog/">Global Settings dialog</a>, which lets you change any system-wide settings for Rapise.</li>
 <li><strong>SpiraTest</strong> - Takes you to a dialog box that lets you change how Rapise is integrated with the <a href="../spiratest_integration/">SpiraTest</a> test management system. It allows you to change the URL, username, and password used to connect.</li>
 <li><strong>Web Spy</strong> - Displays the <a href="../web_settings/">Web Spy Settings</a> dialog box, which allows you to change settings related to using the Web Spy to inspect DOM objects in web pages.</li>
+<li><strong>Browser</strong> - Displays the <a href="../browser_settings/">Browser Settings</a> dialog box with the profiles of the native (non-Selenium) web browser libraries.</li>
 <li><strong>Selenium</strong> - Displays the <a href="../selenium_settings_dialog/">Selenium settings</a> dialog box, which is used to edit the different Selenium web browser profiles that can be used by Rapise.</li>
 <li><strong>Mobile</strong> - Displays the <a href="../mobile_settings_dialog/">Mobile Settings</a> dialog box, which lets you configure the different mobile devices available for testing by Rapise.</li>
 <li><strong>Java</strong> - Displays the <a href="../java_awt_swing_testing/">Install Java Access Bridge</a> dialog box. Installing the Java Access Bridge allows Rapise to connect to Java AWT/Swing applications so that they can be tested.</li>
@@ -12311,7 +12314,7 @@
 <li><strong>Collapse</strong> - Collapses the report to show only the top level. What is visible will depend on how the report is sorted.</li>
 <li><strong>Expand</strong> - Expands all report rows.</li>
 <li><strong>Images</strong> - Toggles between hiding and revealing images.</li>
-<li><strong>Export to HTML</strong> - Saves the report as an <a href="../automated_reporting/#export_as_html_dialog">HTML document</a>.</li>
+<li><strong>Export to HTML</strong> - Saves the report as an <a href="../automated_reporting/#export-as-html-dialog">HTML document</a>.</li>
 <li><strong>Export to Excel</strong> - Saves the report as an Excel file.</li>
 <li><strong>Export to PDF</strong> - Saves the report as an Acrobat PDF file.</li>
 <li><strong>Export to XPS</strong> - Saves the report as an <a href="https://en.wikipedia.org/wiki/Open_XML_Paper_Specification">XML Paper Specification</a> file.</li>

@@ -11341,6 +11341,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mcp-agent" class="md-nav__link">
+    MCP Agent
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -12276,6 +12283,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mcp-agent" class="md-nav__link">
+    MCP Agent
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -12390,7 +12404,7 @@
                 
                 <h1 id="ai-in-rapise">AI in Rapise<a class="headerlink" href="#ai-in-rapise" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>AI capabilities have been integrated directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Additionally, the AI in Rapise is well-versed in Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise, specialized responses. In its initial release, Rapise's AI features include RVL and JavaScript code generation, along with data generation capabilities. Rapise 8.2 supports OpenAI and Azure OpenAI models, including multimodal ones that can accept image input. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.</p>
+<p>AI capabilities have been integrated directly into Rapise, allowing users to harness the power of AI without needing to switch between applications. Everything can be managed within Rapise itself. Additionally, the AI in Rapise is well-versed in Rapise's Global Object API, the currently open testing framework, its modules, and object repositories. This knowledge enables the generation of precise, specialized responses. In its initial release, Rapise's AI features include RVL and JavaScript code generation, along with data generation capabilities. Rapise 8.2 supported OpenAI and Azure OpenAI models; later versions added <a href="#amazon-bedrock">Amazon Bedrock</a> (8.3), <a href="#google">Google</a> (8.4) and <a href="#inflectraai">Inflectra.ai</a> (8.6). Multimodal models that accept image input are supported. The AI workflow in Rapise also supports incremental improvements in code generation quality by allowing users to save positive and negative examples for use in subsequent prompts.</p>
 <p>A key feature of Rapise 8.2 is the <a href="../ai_command/">AI Command</a>, which translates human-readable test step descriptions into executable code using AI. Once code is generated for an AI Command, it can be executed independently of AI. If the AI Command text is modified, the code is regenerated accordingly. When generating code for an AI Command, Rapise considers available Global Objects, as well as Modules/Page Objects and objects from the Object Repository associated with the test case containing the AI Command (including objects linked with the <a href="../../RVL/Repository/">Repository command</a>).</p>
 <p>When using <a href="../ai_command/">AI Commands</a>, the recommended workflow for test creation is as follows: First, define Page Objects with high-level actions (e.g., Login, Logout, OpenModule, AddRecord, UpdateRecord, DeleteRecord). Then, learn and add test case-specific objects to the Object Repository; finally, write your test case using AI Commands. The AI will translate these commands into executable JavaScript, which you can then review and edit. Once all commands are translated into code, the test case is ready for execution.</p>
 <p>Rapise provides two primary interfaces for interacting with AI:</p>
@@ -12419,7 +12433,7 @@
 <li><strong>Snapshots</strong>: Starred chats will appear on this page.</li>
 </ul>
 <h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h3>
-<p>In its initial release (8.2), Rapise supports both OpenAI and Azure OpenAI models. To use OpenAI models, you only need an <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key">OpenAI API Key</a>. For <a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key">Azure OpenAI</a>, you also need to specify the endpoint URL.</p>
+<p>Choose the AI provider: <a href="#inflectraai">Inflectra.ai</a>, <a href="#amazon-bedrock">Amazon Bedrock</a>, <a href="#azure">Azure</a>, <a href="#openai">OpenAI</a> or <a href="#google">Google</a>. The fields each provider needs are described below. For example, to use OpenAI models, you only need an <a href="https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key">OpenAI API Key</a>. For <a href="https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai#authenticate-with-api-key">Azure OpenAI</a>, you also need to specify the endpoint URL.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Screenshot</label><div class="tabbed-content">
 <p><img alt="Dashboard Settings" src="../img/ai_dashboard_settings.png" width="900px" /></p>
 </div>
@@ -13830,6 +13844,8 @@ Logged in as Librarian, <strong>Logout</strong></p>
 </li>
 <li><strong>Use selected code as context:</strong> Select code in the editor before writing a prompt. This allows you to ask the AI to perform actions on a specific block of code, such as <code>Refactor the selected code</code> or <code>Add comments to this function</code>.</li>
 </ul>
+<h4 id="mcp-agent">MCP Agent<a class="headerlink" href="#mcp-agent" title="Permanent link">&para;</a></h4>
+<p>Rapise 9.1 and later. An AI agent that works by calling the tools of MCP servers: the Rapise MCP server (test cases, test runs, object repositories, Page Objects) and the Spira MCP server (test cases, test sets, requirements, releases, test runs). It shows its plan before it calls tools that need approval. See <a href="../agentic_mcp/">Agentic Chat with MCP</a>.</p>
 <h3 id="snapshots">Snapshots<a class="headerlink" href="#snapshots" title="Permanent link">&para;</a></h3>
 <p>On this page, you can find starred chats. To add a chat to Snapshots, locate it in history and hover your mouse pointer over its top-right corner to reveal the <code>...</code> icon:</p>
 <p><img alt="Session Menu" src="../img/ai_dashboard_session_menu.png" width="249px" /></p>
@@ -13969,7 +13985,7 @@ Logged in as Librarian, <strong>Logout</strong></p>
 <ul>
 <li>Root Framework Folder<ul>
 <li><strong>AI</strong> - root folder for AI-related files.<ul>
-<li><strong>commands</strong> - cache for AI Commands, containing generated JavaScript code. This folder must be stored along with the framework; do not delete it. <strong>[Deprecated]</strong></li>
+<li><strong>commands</strong> - cache for AI Commands, containing generated JavaScript code. Used by Rapise 8.2. <strong>[Deprecated]</strong> since 8.3, which keeps the code in <code>ai.commands.json</code> files instead. Rapise still loads code from this folder, so keep it if the framework has tests created with Rapise 8.2.</li>
 <li><strong>messages</strong> - archive of AI chat messages.</li>
 <li><strong>sessions</strong> - high-level information about AI chat sessions (name, ID, timestamp).</li>
 <li><strong>options.json</strong> - local <a href="#settings">options</a> that override the global ones stored in <code>C:\ProgramData\Inflectra\Rapise\AI\options.json</code>. </li>

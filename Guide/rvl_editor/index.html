@@ -2790,13 +2790,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dragdrop-for-doplaytest" class="md-nav__link">
-    Drag&amp;Drop for DoPlayTest
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -4366,13 +4359,6 @@
         <li class="md-nav__item">
   <a href="#doplaytest-via-dragdrop" class="md-nav__link">
     DoPlayTest via Drag&amp;Drop
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dragdrop-for-doplaytest" class="md-nav__link">
-    Drag&amp;Drop for DoPlayTest
   </a>
   
 </li>
@@ -12246,13 +12232,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dragdrop-for-doplaytest" class="md-nav__link">
-    Drag&amp;Drop for DoPlayTest
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See Also
   </a>
@@ -12337,7 +12316,7 @@
 <p><img alt="States" src="../img/rvl_dropdowns_xls_states.png" /></p>
 <p>Moreover, a code is defined for each state name, so it can be re-mapped in the implementation of the <code>SetState</code> function:</p>
 <p><img alt="States" src="../img/rvl_dropdowns_xls_stateCodes.png" /></p>
-<p>Dropdown values are defined in the file <code>Dropdowns.xlsx</code>, which can be added to the test using the <a href="../test_files_dialog/#context-menu-folder">Create/Spreadsheet...</a> menu item.</p>
+<p>Dropdown values are defined in the file <code>Dropdowns.xlsx</code>, which can be added to the test using the <a href="../test_files_dialog/#folder-context-menu">Create/Spreadsheet...</a> menu item.</p>
 <p>The full key to find a matching dropdown is <code>objectid</code>.<code>method</code>.<code>paramName</code>. If not found, it will check the <code>method.paramName</code> and <code>paramName</code> columns:</p>
 <table>
 <thead>
@@ -12410,7 +12389,7 @@
 <li><strong>Rename...</strong> - Changes the sheet tab name.</li>
 <li><strong>Remove Sheet '<code>&lt;sheet name&gt;</code>'</strong> - Deletes the sheet from the workbook.</li>
 <li><strong>Copy RVL DoPlaySheet</strong> - Copies the call statement for the selected sheet for inserting into another RVL sheet in the same workbook.</li>
-<li><strong>Copy RVL DoPlaySheet</strong> - Copy call statement for the selected sheet for inserting into the other RVL workbook.</li>
+<li><strong>Copy RVL DoPlayScript</strong> - Copies the call statement for the selected sheet for inserting into another RVL workbook.</li>
 <li><strong>Copy RVL.DoPlayScript(...)</strong> - Copies JavaScript code to execute this sheet (call sheet from JavaScript).</li>
 </ul>
 <h2 id="functions-object">Functions Object<a class="headerlink" href="#functions-object" title="Permanent link">&para;</a></h2>
@@ -12477,12 +12456,6 @@
 <p>However, if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while performing the same action, the call is created with the test alias name (short name) instead:</p>
 <p><img alt="TestCase Shift+Drag&amp;Drop" src="../img/rvl_editor_testcase_shift_drag.png" /></p>
 <p>Short names are useful when all test cases have unique names. This usually entails longer naming conventions; for example, instead of <code>Invoices/Create</code>, a test case should be named <code>Invoices/Create new Invoice</code> to avoid collisions with other test cases like <code>Orders/Create</code>.</p>
-<h2 id="dragdrop-for-doplaytest">Drag&amp;Drop for DoPlayTest<a class="headerlink" href="#dragdrop-for-doplaytest" title="Permanent link">&para;</a></h2>
-<p>When you drag and drop a <a href="../Frameworks/frameworks/#test-cases">test case</a> into the RVL, it generates a <code>RVL.DoPlayTest</code> call. This call references the test case using an absolute path starting from the framework root, represented by <code>%WORKDIR%</code>.</p>
-<p><img alt="Drag&amp;Drop TestCase" src="../img/rvl_editor_testcase_drag.png" /></p>
-<p>However, if you hold the <span class="keys"><kbd class="key-shift">Shift</kbd></span> key while performing the same action, the same call is created with the test alias name (short name) instead:</p>
-<p><img alt="Shift+Drag&amp;Drop TestCase" src="../img/rvl_editor_testcase_shift_drag.png" /></p>
-<p>Short names are particularly useful when each test case has a unique name. In such cases, longer naming conventions can be used to differentiate test cases; for example, using <code>Invoices/Create new Invoice</code> instead of <code>Invoices/Create</code> to avoid collisions with other test cases like <code>Orders/Create</code>.</p>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../visual_language/">About RVL</a></li>

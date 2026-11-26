@@ -12209,8 +12209,9 @@
 <p>Ensure you have an AI provider configured in <a href="../ai_dashboard/#settings">AI Dashboard Settings</a>. The agentic chat works with:</p>
 <ul>
 <li>Inflectra.ai</li>
-<li>Amazon Bedrock (Claude models)</li>
-<li>OpenAI (GPT-4)</li>
+<li>Amazon Bedrock (Anthropic Claude, Amazon Nova, Qwen and OpenAI models)</li>
+<li>OpenAI</li>
+<li>Azure OpenAI</li>
 </ul>
 <h3 id="2-open-agentic-chat">2. Open Agentic Chat<a class="headerlink" href="#2-open-agentic-chat" title="Permanent link">&para;</a></h3>
 <ol>
@@ -12248,8 +12249,8 @@
 <tbody>
 <tr>
 <td><code>servers</code></td>
-<td>Which MCP servers to enable</td>
-<td><code>["rapise"]</code></td>
+<td>Which MCP servers the agent uses; <code>["*"]</code> means all enabled servers</td>
+<td><code>["*"]</code></td>
 </tr>
 <tr>
 <td><code>plan_preview</code></td>
@@ -12264,7 +12265,7 @@
 <tr>
 <td><code>max_tool_calls_per_turn</code></td>
 <td>Limit tool calls per message</td>
-<td><code>20</code></td>
+<td><code>100</code></td>
 </tr>
 <tr>
 <td><code>turn_timeout_ms</code></td>
@@ -12313,7 +12314,8 @@
 <li><strong>ask</strong>: Show in plan preview, wait for approval</li>
 <li><strong>deny</strong>: Never allow execution</li>
 </ul>
-<p>Configure policies based on the risk level of each operation.</p>
+<p>Configure policies based on the risk level of each operation. In the AI Dashboard, open <strong>Settings</strong> and the <strong>MCP</strong> tab, expand a server and choose <code>auto</code>, <code>ask</code> or <code>deny</code> for each tool in the <strong>Approval</strong> column. The switch next to a server turns it on or off. <strong>Always Approve</strong> in a plan preview sets the tools of that plan to <code>auto</code>.</p>
+<p>The policies are saved in <code>mcp-servers.json</code> (<code>autoApprove</code> and <code>disabledTools</code> lists of each server): <code>C:\ProgramData\Inflectra\Rapise\AI\mcp-servers.json</code>, or <code>AI\mcp-servers.json</code> in the framework when the server is defined there.</p>
 <h2 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Be Specific</strong>: Clear requests lead to better tool selection</li>
@@ -12326,7 +12328,8 @@
 <h3 id="no-mcp-tools-available">"No MCP tools available"<a class="headerlink" href="#no-mcp-tools-available" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Check that MCP servers are configured and running</li>
-<li>Verify server connections in the MCP settings</li>
+<li>In AI Dashboard <strong>Settings</strong> &gt; <strong>MCP</strong>, check that the server is switched on and shows its number of tools (click the server to connect)</li>
+<li>The Rapise MCP server needs the <strong>MCP Server Port</strong> set in <a href="../../Guide/options_dialog/#mcp-server">Rapise Settings</a></li>
 <li>Ensure the AI provider is properly configured</li>
 </ul>
 <h3 id="tool-calls-timing-out">Tool calls timing out<a class="headerlink" href="#tool-calls-timing-out" title="Permanent link">&para;</a></h3>
