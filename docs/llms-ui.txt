@@ -35,7 +35,7 @@ Menu paths are written `Menu > Item`. Button and field names are in backticks.
 | Output view | Bottom. Execution log, `Log()` output, search box | [Output View](Guide/output_view) |
 | Errors / Warning / Find Results | Errors that stopped recording or playback; syntax errors while typing and invalid RVL rows; search results. Double-click a line to go to it | [Errors](Guide/errors_view) · [Warning](Guide/warning_view) · [Find Results](Guide/find_results_view) |
 | Watch, Variable/Call Stack | Open by themselves while debugging | [Watch](Guide/watch_view) · [Call Stack](Guide/variable_call_stack_view) |
-| Start Page | Tutorials, webinars, samples (`Fetch Samples`). Reopen with `View > Start Page` | [Start Page](Guide/start_page) |
+| Start Page | Tabs `This framework` (a box that opens the MCP Agent chat with the framework and Spira tools, `Ask Agent`, 9.2+), `Getting Started` (a documentation search box (9.2+), and `Ask AI` (9.2+), which opens the Help chat when the MCP server and an AI provider are set up; links to tutorials and webinars) and `Samples` (`Fetch Samples`). Reopen with `View > Start Page` | [Start Page](Guide/start_page) · [AI agent box](Guide/start_page#chatting-with-the-ai-agent) · [Searching the documentation](Guide/start_page#searching-the-documentation) · [Ask AI](Guide/start_page#ask-ai) |
 | Spira Dashboard | `View > Spira Dashboard`. Framework, parameters, Spira test cases, test sets, runs | [Spira Dashboard](Guide/spira_dashboard_2) |
 | AI Dashboard | `View > AI Dashboard`. AI settings and chats | [AI Dashboard](AI/ai_dashboard) |
 
