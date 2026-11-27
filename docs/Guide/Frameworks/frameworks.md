@@ -463,15 +463,65 @@ To run an entire test case, you have two options:
 
 ### Running a Batch of Test Cases
 
-There are two ways to run a batch of test cases: locally and test-set based.
+Rapise can run several test cases in one go. Pick the method that fits the task:
 
-For local batch execution, you can create another test case that calls the required test cases one by one using the `RVL.DoPlayTest` function.
+| Method | Use it for | Requires |
+|---|---|---|
+| [Select test cases in the Choose Test Case dialog](#selecting-test-cases-to-play) | A quick local run of a few test cases | Rapise 8.1+ |
+| [Play All on a test case folder](#playing-all-test-cases-in-a-folder) | Running every test case in a folder | Rapise 8.1+ |
+| [Execute a test set](#executing-a-test-set) | Repeatable runs with a fixed list, order, and configuration; scheduling; run history in Spira | Rapise 8.0+; without a Spira connection, Rapise 9.1+ |
+| [Run a test set from the command line](#running-a-test-set-from-the-command-line) | CI/CD pipelines | Rapise 9.1+ |
+| [Call test cases from another test case](#calling-test-cases-from-a-test-case) | A fixed sequence that runs as a single test case | Any version |
 
-In the following example, we have a test case named `!Full - Author Management`. The exclamation mark (!) at the beginning of the name ensures that it is shown first in its folder when sorted. This test case calls other test cases from a specific folder one by one. We have added them to the test case using `Shift`+Drag&Drop, so they are called by their full names instead of their paths.
+#### Selecting Test Cases to Play
+
+Click *Play* on the toolbar. The [Choose Test Case](../test_to_play_selector.md) dialog opens. Check the test cases you want to run, or check a folder to select all test cases in it. Optionally, choose a [configuration](parameters.md#configurations) or set *Parameters...*, then click *OK*.
+
+![Choose Test Case](../img/test_to_play_selector_test_case_chooser.png){width="600px"}
+
+After the run, Rapise displays a combined report. The icon color of each test case in the Object Tree shows its result. To view the report of an individual test case, right-click it and choose *Last Report*.
+
+#### Playing All Test Cases in a Folder
+
+Right-click a test case folder (or the *Test Cases* root node) in the [Object Tree](../object_tree.md#test-cases-group-context-menu) and choose:
+
+- *Play All* to run the test cases in this folder.
+- *Play All (Recursive)* to run the test cases in this folder and all its subfolders.
+
+![Test Cases Group Context Menu](../img/object_tree_context_testcasegroup.png){width="259px"}
+
+Both commands skip test cases tagged `template` or `skip`. To exclude a test case from these runs, Shift+right-click it and set the `skip` [tag](../object_tree.md#test-case-tags).
+
+#### Executing a Test Set
+
+A test set stores a list of test cases, their order, and a configuration, so the same batch can be run again. Define test sets in the [Framework view](../spira_dashboard_2.md#manage-test-sets) of the Spira Dashboard, then use *Execute* to run the active test set on the local machine via [RapiseLauncher](../spiratest_integration.md#using-rapiselauncher). Since Rapise 9.1, test sets can be created and executed [without a Spira connection](../spira_dashboard_2.md#offline-mode-without-spira-integration).
+
+When the framework is synchronized with Spira, you can also schedule test sets, run them on other automation hosts, rerun failed test cases, and see the status and history of each test case. See [Running Test Sets with Spira](#running-test-sets-with-spira).
+
+#### Running a Test Set from the Command Line
+
+To run a framework test set from a build server or CI/CD pipeline, pass its name to `SeSExecutor.js` with the `-testset` parameter:
+
+```cmd
+cscript.exe "C:\Program Files (x86)\Inflectra\Rapise\Engine\SeSExecutor.js" "C:\MyFramework\Framework.sstest" -testset:"Smoke Tests"
+```
+
+Dynamic test sets are not supported in this mode. See [Running a Framework Test Set](../command_line.md#running-a-framework-test-set) for details and [JUnit XML Report Output](../command_line.md#junit-xml-report-output) to publish results to a CI/CD tool.
+
+#### Calling Test Cases from a Test Case
+
+You can also create a test case that calls other test cases one by one with `RVL.DoPlayTest`. Drag a test case into the RVL editor to add the call. With ++shift++ held, the call refers to the test case by name instead of by path (see [Test Case Naming](#test-case-naming)).
+
+In the following example, the test case `!Full - Author Management` calls the test cases of the *Author Management* folder. The exclamation mark at the start of its name sorts it first in the folder.
 
 ![Full Folder Run Test Case](./img/frameworks_full_folder_run.png)
 
-A limitation of this approach is that while the overall status of the `!Full - Author Management` test case is displayed, it doesn't reflect the status of the individual test cases it contains (e.g., `Create New Author`, `Edit Existing Author`). If you require batch execution with detailed status and other test-management related features, it's recommended to consider running test sets using the [Spira Dashboard](../spira_dashboard_2.md). This allows for better tracking of individual test case statuses and provides additional test management capabilities.
+This approach has limitations:
+
+- The report shows one status for the calling test case, not a status for each called test case (such as `Create New Author` or `Edit Existing Author`).
+- Called test cases run in the context of the calling test case. They share its browser or mobile profile and loaded libraries, so results may differ from a standalone run.
+
+Use this approach when the called test cases form one scenario. To get a separate status for each test case, use one of the methods above.
 
 ### Running Test Sets with Spira
 
